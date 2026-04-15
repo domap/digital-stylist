@@ -1,0 +1,63 @@
+# Production-style stack: one worker (do not scale replicas without a shared LangGraph checkpointer).
+services:
+  worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+    env_file: .env
+    environment:
+      STYLIST_WORKER_HOST: "0.0.0.0"
+      STYLIST_BEHIND_PROXY: "true"
+      CHROMA_PERSIST_DIR: /app/chroma_data
+    volumes:
+      - chroma_data:/app/chroma_data
+    ports:
+      - "127.0.0.1:8787:8787"
+
+  orchestration:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.orchestration
+    env_file: .env
+    environment:
+      NODE_ENV: production
+      STYLIST_WORKER_URL: http://worker:8787
+      TRUST_PROXY: "true"
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      worker:
+        condition: service_healthy
+
+  # Local Postgres for MCP domains (customer / appointment / associate). Host port 5433 avoids clashing with a host install.
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: stylist
+      POSTGRES_PASSWORD: stylist
+      POSTGRES_DB: stylist
+    ports:
+      - "127.0.0.1:5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U stylist -d stylist"]
+      interval: 2s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  # Independent Chroma indexer (optional): docker compose --profile catalog run --rm catalog-feed --path /data/catalog.json
+  catalog-feed:
+    profiles: ["catalog"]
+    build:
+      context: .
+      dockerfile: catalog_feed/Dockerfile
+    env_file: .env
+    environment:
+      CHROMA_PERSIST_DIR: /app/chroma_data
+    volumes:
+      - chroma_data:/app/chroma_data
+
+volumes:
+  chroma_data:
+  pgdata:

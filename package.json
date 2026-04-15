@@ -1,0 +1,11 @@
+{
+  "name": "digital-stylist-monorepo",
+  "private": true,
+  "workspaces": ["apps/clienteling", "apps/connect"],
+  "scripts": {
+    "dev:clienteling": "npm -w @digital-stylist/clienteling run dev",
+    "dev:connect": "npm -w @digital-stylist/connect run dev",
+    "build:clienteling": "npm -w @digital-stylist/clienteling run build",
+    "build:connect": "npm -w @digital-stylist/connect run build"
+  }
+}

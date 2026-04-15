@@ -1,0 +1,10 @@
+"""Customer MCP (stdio). Prefer ``digital-stylist-mcp-service`` + ``STYLIST_MCP_REMOTE_URL`` for a separate process."""
+
+from __future__ import annotations
+
+from digital_stylist.mcp_servers.build_mcp import build_customer_stdio_mcp
+
+mcp = build_customer_stdio_mcp()
+
+if __name__ == "__main__":
+    mcp.run(transport="stdio")

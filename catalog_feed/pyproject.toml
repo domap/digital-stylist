@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stylist-catalog-feed"
+version = "0.1.0"
+description = "Independent ChromaDB catalog indexing pipeline for Digital Stylist (deploy separately from orchestration)."
+requires-python = ">=3.11"
+dependencies = [
+    "digital-stylist>=0.1.0",
+]
+
+[project.scripts]
+digital-stylist-catalog-feed = "catalog_feed.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["catalog_feed"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

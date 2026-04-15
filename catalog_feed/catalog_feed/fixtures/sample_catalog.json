@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "sku": "DRS-LB-001",
+      "name": "Linen Breeze Midi",
+      "description": "Light blue linen summer midi dress, breathable, sleeveless",
+      "price": 128.0,
+      "category": "Dresses",
+      "sizes": ["6", "8", "10"],
+      "images": ["https://example.com/img/drs-lb-001.jpg"],
+      "inventory_quantity": 12,
+      "inventory_status": "in_stock",
+      "attributes": { "fabric": "linen", "season": "summer" }
+    }
+  ]
+}

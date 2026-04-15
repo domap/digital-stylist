@@ -1,0 +1,4770 @@
+{
+  "products": [
+    {
+      "sku": "at-001",
+      "name": "Tailored Navy Blazer & Wide-Leg Trouser Set",
+      "description": "Command any boardroom in this impeccably tailored navy blazer paired with flowing wide-leg trousers. A timeless power set.",
+      "price": 248,
+      "brand": "AnnTaylor",
+      "category": "Suiting",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/navy-blazer-set.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Business Meeting, Conference, Professional Meeting",
+        "style": "Classic, Professional, Power Dressing",
+        "colors": "Navy",
+        "fit": "Regular",
+        "fabric": "68% Polyester, 28% Viscose, 4% Elastane",
+        "care_instructions": "Dry clean only. Steam to refresh between wearings.",
+        "styling_tips": "Pair with pointed-toe pumps and a structured bag for polished authority. Add a silk camisole underneath for after-hours elegance."
+      }
+    },
+    {
+      "sku": "at-002",
+      "name": "Peony Floral Midi Dress",
+      "description": "Blooming with oversized peony florals, this graceful midi dress features a boat neckline and a tie-waist silhouette.",
+      "price": 159,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/floral-midi-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Garden Party, Brunch, Wedding Guest, Date Night, Birthday, Family Gathering",
+        "style": "Feminine, Romantic, Floral",
+        "colors": "Pink Floral",
+        "fit": "Regular",
+        "fabric": "100% Polyester with matte finish",
+        "care_instructions": "Machine wash cold, hang dry. Low iron if needed.",
+        "styling_tips": "Complete with strappy sandals and a woven clutch for garden events. Add a cropped cardigan for cooler evenings."
+      }
+    },
+    {
+      "sku": "at-003",
+      "name": "Sky Blue Button-Front Blouse",
+      "description": "Effortlessly chic in soft sky blue, this button-front blouse pairs beautifully with tailored trousers or denim.",
+      "price": 89,
+      "brand": "AnnTaylor",
+      "category": "Tops",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/blue-blouse-white-pants.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Casual Friday, Lunch, Professional Meeting",
+        "style": "Classic, Versatile, Polished",
+        "colors": "Sky Blue",
+        "fit": "Regular",
+        "fabric": "100% Cotton Poplin",
+        "care_instructions": "Machine wash cold. Tumble dry low.",
+        "styling_tips": "Tuck into high-waisted trousers for meetings, or wear untucked with slim jeans for casual Fridays."
+      }
+    },
+    {
+      "sku": "at-004",
+      "name": "Classic Black Sheath Dress",
+      "description": "The ultimate wardrobe essential. This floor-length sheath dress features a sleek silhouette with a satin waist detail.",
+      "price": 179,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-sheath-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cocktail Party, Evening Event, Work, Dinner, Birthday, Anniversary",
+        "style": "Elegant, Timeless, Sophisticated",
+        "colors": "Black",
+        "fit": "Slim",
+        "fabric": "95% Polyester, 5% Spandex with satin trim",
+        "care_instructions": "Dry clean recommended. Store on padded hanger.",
+        "styling_tips": "Layer with a statement necklace and strappy heels for evening. Add a structured blazer to transition to work."
+      }
+    },
+    {
+      "sku": "at-005",
+      "name": "Cashmere Turtleneck & Pencil Skirt",
+      "description": "Luxurious cashmere turtleneck in warm cream paired with a camel pencil skirt. Autumn sophistication at its finest.",
+      "price": 198,
+      "brand": "AnnTaylor",
+      "category": "Knitwear",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/cream-sweater-skirt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Fall Outing, Weekend, Family Gathering",
+        "style": "Cozy, Polished, Autumn",
+        "colors": "Cream, Camel",
+        "fit": "Regular",
+        "fabric": "100% Cashmere (sweater), 70% Wool 30% Polyester (skirt)",
+        "care_instructions": "Hand wash in cold water with cashmere shampoo. Lay flat to dry.",
+        "styling_tips": "Perfect with knee-high boots and gold jewelry. Layer a camel coat over the top for outdoor events."
+      }
+    },
+    {
+      "sku": "at-006",
+      "name": "Pink Tweed Jacket & Skirt Set",
+      "description": "Make a statement in this Parisian-inspired pink tweed set with pearl button details. Refined femininity at its best.",
+      "price": 298,
+      "brand": "AnnTaylor",
+      "category": "Suiting",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/pink-tweed-suit.jpg"
+      ],
+      "attributes": {
+        "occasion": "Luncheon, Work, Special Event, Spring, Birthday, Family Gathering",
+        "style": "Feminine, Classic, Statement",
+        "colors": "Pink",
+        "fit": "Regular",
+        "fabric": "52% Cotton, 30% Acrylic, 18% Polyester Tweed",
+        "care_instructions": "Dry clean only. Store buttoned on a padded hanger.",
+        "styling_tips": "Style with nude pumps and pearl earrings for a Chanel-inspired look. Wear the jacket alone over a silk cami and jeans."
+      }
+    },
+    {
+      "sku": "at-007",
+      "name": "Olive Linen Wide-Leg Pants",
+      "description": "Relaxed-fit linen pants in rich olive green. Perfect with a sleeveless top for easy weekend elegance.",
+      "price": 110,
+      "brand": "AnnTaylor",
+      "category": "Pants",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/olive-linen-pants.jpg"
+      ],
+      "attributes": {
+        "occasion": "Weekend, Brunch, Travel, Casual, Tour",
+        "style": "Relaxed, Effortless, Resort",
+        "colors": "Olive",
+        "fit": "Relaxed",
+        "fabric": "100% European Linen",
+        "care_instructions": "Machine wash cold on gentle cycle. Hang dry for best results.",
+        "styling_tips": "Pair with a white tank and espadrilles for resort vibes. Roll the cuffs for a casual, lived-in look."
+      }
+    },
+    {
+      "sku": "at-008",
+      "name": "Red Wrap Dress",
+      "description": "Turn heads in this striking red wrap dress with elegant draping. The perfect choice for any memorable evening.",
+      "price": 169,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/red-wrap-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Date Night, Cocktail Party, Dinner, Anniversary, Birthday",
+        "style": "Bold, Romantic, Statement",
+        "colors": "Red",
+        "fit": "Regular",
+        "fabric": "95% Polyester, 5% Elastane Jersey",
+        "care_instructions": "Machine wash cold, inside out. Hang dry.",
+        "styling_tips": "Finish with gold hoops and nude heels for date night. Add a faux fur stole for winter celebrations."
+      }
+    },
+    {
+      "sku": "at-009",
+      "name": "Burgundy Velvet Cocktail Dress",
+      "description": "Rich burgundy velvet with a flattering V-neckline and cinched waist. A show-stopping choice for celebrations and galas.",
+      "price": 219,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/burgundy-velvet-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Birthday, Cocktail Party, Anniversary, Evening Event, Dinner",
+        "style": "Bold, Elegant, Statement",
+        "colors": "Burgundy",
+        "fit": "Regular",
+        "fabric": "92% Polyester, 8% Spandex Velvet",
+        "care_instructions": "Dry clean only. Store hanging to avoid crushing the velvet pile.",
+        "styling_tips": "Accessorize with diamond studs and a metallic clutch. Keep shoes simple — black pointed-toe pumps let the dress shine."
+      }
+    },
+    {
+      "sku": "at-010",
+      "name": "Charcoal Pinstripe Pantsuit",
+      "description": "Command respect in this sharply tailored charcoal pinstripe pantsuit. Modern power dressing with a feminine cut.",
+      "price": 278,
+      "brand": "AnnTaylor",
+      "category": "Suiting",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/charcoal-pantsuit.jpg"
+      ],
+      "attributes": {
+        "occasion": "Professional Meeting, Conference, Work, Business Meeting",
+        "style": "Professional, Power Dressing, Classic",
+        "colors": "Charcoal",
+        "fit": "Slim",
+        "fabric": "55% Wool, 43% Polyester, 2% Elastane",
+        "care_instructions": "Dry clean only. Press with a cloth to protect fabric.",
+        "styling_tips": "Style with a crisp white blouse for boardroom authority. Swap for a silk cami and bold lip for after-work cocktails."
+      }
+    },
+    {
+      "sku": "at-011",
+      "name": "Sage Floral Maxi Dress",
+      "description": "A flowing sage green maxi with delicate floral embroidery. Destined for destination weddings and sun-drenched gatherings.",
+      "price": 189,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/sage-maxi-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Destination Wedding, Garden Party, Wedding Guest, Tour, Spring",
+        "style": "Romantic, Feminine, Resort",
+        "colors": "Sage Green",
+        "fit": "Regular",
+        "fabric": "100% Polyester Chiffon with embroidered overlay",
+        "care_instructions": "Hand wash cold. Hang dry away from direct sunlight.",
+        "styling_tips": "Pair with block-heel sandals and a straw clutch for outdoor weddings. Add a pashmina for evening receptions."
+      }
+    },
+    {
+      "sku": "at-012",
+      "name": "Ivory Lace Sheath Dress",
+      "description": "Exquisite Chantilly lace over a fitted sheath silhouette. An unforgettable entrance for any refined occasion.",
+      "price": 229,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-lace-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Destination Wedding, Luncheon, Special Event, Anniversary, Brunch",
+        "style": "Elegant, Feminine, Timeless",
+        "colors": "Ivory",
+        "fit": "Slim",
+        "fabric": "100% Nylon Lace over 95% Polyester lining",
+        "care_instructions": "Dry clean only. Store in garment bag to protect lace.",
+        "styling_tips": "Finish with nude T-strap heels and a pearl bracelet. A fitted blazer in blush or navy transforms this for work events."
+      }
+    },
+    {
+      "sku": "at-013",
+      "name": "Camel Cashmere Cardigan & Wide-Leg Set",
+      "description": "First-class comfort meets elevated style. A buttery cashmere cardigan paired with wide-leg trousers for effortless travel chic.",
+      "price": 258,
+      "brand": "AnnTaylor",
+      "category": "Knitwear",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/camel-travel-set.jpg"
+      ],
+      "attributes": {
+        "occasion": "Travel, Tour, Weekend, Fall Outing, Casual",
+        "style": "Cozy, Effortless, Relaxed",
+        "colors": "Camel, Cream",
+        "fit": "Relaxed",
+        "fabric": "100% Cashmere (cardigan), 78% Viscose 22% Polyamide (pants)",
+        "care_instructions": "Hand wash cold. Lay flat to dry. Fold, don't hang.",
+        "styling_tips": "Add leather loafers and a structured tote for airport elegance. Layer a silk scarf at the neck for Riviera polish."
+      }
+    },
+    {
+      "sku": "at-014",
+      "name": "Royal Blue Fit & Flare Dress",
+      "description": "Celebrate in vivid royal blue. This fit-and-flare silhouette flatters every figure with its boat neckline and pleated skirt.",
+      "price": 149,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/royal-blue-party-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Birthday, Cocktail Party, Family Gathering, Brunch, Special Event",
+        "style": "Bold, Feminine, Statement",
+        "colors": "Royal Blue",
+        "fit": "Regular",
+        "fabric": "95% Polyester, 5% Spandex Scuba",
+        "care_instructions": "Machine wash cold on delicate. Hang dry.",
+        "styling_tips": "Style with metallic heels and a crystal clutch for birthdays. Tone down with nude flats for a family brunch."
+      }
+    },
+    {
+      "sku": "at-015",
+      "name": "White Linen Belted Shirtdress",
+      "description": "Crisp white linen shirtdress with a raffia belt and patch pockets. The quintessential travel companion for warm-weather adventures.",
+      "price": 139,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/white-linen-shirtdress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Tour, Travel, Weekend, Brunch, Destination Wedding",
+        "style": "Effortless, Classic, Resort",
+        "colors": "White",
+        "fit": "Regular",
+        "fabric": "100% European Linen",
+        "care_instructions": "Machine wash cold. Tumble dry low. Embrace the natural wrinkle.",
+        "styling_tips": "Style with tan leather sandals and oversized sunglasses. Layer gold bangles for resort sophistication."
+      }
+    },
+    {
+      "sku": "at-016",
+      "name": "Emerald Silk Blouse & Trouser Ensemble",
+      "description": "Luxurious emerald silk blouse with gathered shoulders, paired with tailored black trousers. Commanding yet refined.",
+      "price": 195,
+      "brand": "AnnTaylor",
+      "category": "Tops",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/emerald-silk-blouse.jpg"
+      ],
+      "attributes": {
+        "occasion": "Professional Meeting, Dinner, Family Gathering, Work, Evening Event",
+        "style": "Sophisticated, Bold, Polished",
+        "colors": "Emerald, Black",
+        "fit": "Regular",
+        "fabric": "100% Mulberry Silk (blouse), 70% Polyester 30% Viscose (trousers)",
+        "care_instructions": "Dry clean silk blouse. Trousers machine washable cold.",
+        "styling_tips": "Add black pointed-toe pumps for professional meetings. Swap trousers for a leather skirt for evening occasions."
+      }
+    },
+    {
+      "sku": "at-017",
+      "name": "Dusty Rose Pleated Midi Skirt & Knit Top",
+      "description": "Soft pleats in dusty rose flow gracefully with every step. Paired with a cable-knit top for a feminine, put-together look.",
+      "price": 168,
+      "brand": "AnnTaylor",
+      "category": "Skirts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/dusty-rose-pleated-set.jpg"
+      ],
+      "attributes": {
+        "occasion": "Family Gathering, Brunch, Birthday, Spring, Luncheon",
+        "style": "Feminine, Romantic, Polished",
+        "colors": "Dusty Rose, Cream",
+        "fit": "Regular",
+        "fabric": "100% Polyester Pleated Satin (skirt), 60% Cotton 40% Acrylic (top)",
+        "care_instructions": "Hand wash cold, hang dry. Do not iron pleats.",
+        "styling_tips": "Complete with kitten heels and delicate gold jewelry for family celebrations. Add a denim jacket for casual outings."
+      }
+    },
+    {
+      "sku": "at-018",
+      "name": "Navy Striped Resort Blazer",
+      "description": "A nautical-inspired striped blazer that transitions seamlessly from seaside tours to resort dinners. Effortless coastal elegance.",
+      "price": 175,
+      "brand": "AnnTaylor",
+      "category": "Jackets",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/striped-resort-blazer.jpg"
+      ],
+      "attributes": {
+        "occasion": "Tour, Travel, Destination Wedding, Weekend, Brunch",
+        "style": "Classic, Resort, Effortless",
+        "colors": "Navy, White",
+        "fit": "Regular",
+        "fabric": "78% Cotton, 22% Polyester Ponte",
+        "care_instructions": "Machine wash cold on gentle. Reshape while damp.",
+        "styling_tips": "Pair with white linen pants and espadrilles for resort style. Drape over shoulders for effortless Riviera chic."
+      }
+    },
+    {
+      "sku": "at-019",
+      "name": "Gold Sequin Top & Palazzo Pants",
+      "description": "Make every birthday unforgettable in this dazzling gold sequin top with flowing black palazzo pants. Pure celebration dressing.",
+      "price": 225,
+      "brand": "AnnTaylor",
+      "category": "Tops",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-sequin-top.jpg"
+      ],
+      "attributes": {
+        "occasion": "Birthday, Cocktail Party, Evening Event, Anniversary, New Year",
+        "style": "Bold, Statement, Glamorous",
+        "colors": "Gold, Black",
+        "fit": "Regular",
+        "fabric": "Sequin mesh over polyester lining (top), 100% Polyester Georgette (pants)",
+        "care_instructions": "Hand wash cold, inside out. Hang dry. Do not iron sequins.",
+        "styling_tips": "Add statement earrings and strappy heels for maximum glamour. Keep makeup bold — a red lip is perfection here."
+      }
+    },
+    {
+      "sku": "at-020",
+      "name": "Coral Wrap Top & Linen Pants",
+      "description": "Vibrant coral wrap top with a self-tie bow, paired with cream wide-leg linen pants. Tropical-ready sophistication.",
+      "price": 145,
+      "brand": "AnnTaylor",
+      "category": "Tops",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/coral-wrap-top.jpg"
+      ],
+      "attributes": {
+        "occasion": "Destination Wedding, Tour, Family Gathering, Brunch, Weekend",
+        "style": "Feminine, Resort, Relaxed",
+        "colors": "Coral, Cream",
+        "fit": "Regular",
+        "fabric": "95% Viscose 5% Elastane (top), 100% Linen (pants)",
+        "care_instructions": "Machine wash cold on delicate. Hang dry.",
+        "styling_tips": "Style with wedge sandals and a woven basket bag for destination events. Layer gold pendant necklaces for a boho touch."
+      }
+    },
+    {
+      "sku": "at-021",
+      "name": "Teal Tropical Print Sundress",
+      "description": "Escape to paradise in this breezy teal tropical print sundress. The V-neckline and flowing skirt keep you cool in humid climates.",
+      "price": 129,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/tropical-sundress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Tour, Tropical Getaway, Brunch, Weekend",
+        "style": "Resort, Relaxed, Feminine",
+        "colors": "Teal, White",
+        "fit": "Regular",
+        "fabric": "100% Rayon",
+        "care_instructions": "Machine wash cold. Hang dry. Cool iron if needed.",
+        "styling_tips": "Pair with leather sandals and a straw tote for beach towns. Add a wide-brim hat for sun protection with style."
+      }
+    },
+    {
+      "sku": "at-022",
+      "name": "Peach Tank & White Linen Palazzo Set",
+      "description": "Stay cool in scorching heat with this breathable peach cotton tank and white linen palazzo pants. Maximum airflow, maximum style.",
+      "price": 155,
+      "brand": "Loft",
+      "category": "Pants",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/linen-palazzo-set.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Tour, Tropical Getaway, Weekend, Casual, Summer",
+        "style": "Relaxed, Effortless, Resort",
+        "colors": "Peach, White",
+        "fit": "Relaxed",
+        "fabric": "100% Cotton (top), 100% European Linen (pants)",
+        "care_instructions": "Machine wash cold on gentle. Hang dry.",
+        "styling_tips": "Add wedge espadrilles and oversized sunglasses for a resort-ready look. Perfect for exploring Mediterranean towns."
+      }
+    },
+    {
+      "sku": "at-023",
+      "name": "Navy Embroidered Kaftan Cover-Up",
+      "description": "Transition effortlessly from beach to bar in this navy sheer kaftan with delicate embroidery details. The ultimate beach vacation essential.",
+      "price": 98,
+      "brand": "AnnTaylor",
+      "category": "Swimwear",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/navy-kaftan-coverup.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Tropical Getaway, Pool Party, Summer",
+        "style": "Resort, Relaxed, Bohemian",
+        "colors": "Navy",
+        "fit": "Relaxed",
+        "fabric": "100% Polyester Chiffon with cotton embroidery",
+        "care_instructions": "Hand wash cold. Hang dry in shade.",
+        "styling_tips": "Layer over your swimsuit with metallic sandals for poolside lunches. Add statement earrings for sunset cocktails."
+      }
+    },
+    {
+      "sku": "at-024",
+      "name": "Gold Shimmer A-Line Cocktail Dress",
+      "description": "Dazzle at destination weddings and cruise dinners in this stunning gold shimmer A-line dress. Understated glamour at its finest.",
+      "price": 239,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/champagne-maxi-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Destination Wedding, Cruise, Evening Event, Anniversary, Cocktail Party",
+        "style": "Elegant, Statement, Glamorous",
+        "colors": "Gold",
+        "fit": "Regular",
+        "fabric": "72% Polyester, 28% Metallic Thread with satin lining",
+        "care_instructions": "Dry clean only. Store in garment bag.",
+        "styling_tips": "Keep accessories minimal — nude heels and delicate gold jewelry let the dress be the star. Perfect for beachside ceremonies."
+      }
+    },
+    {
+      "sku": "at-025",
+      "name": "White Eyelet Blouse & Khaki Shorts",
+      "description": "The perfect sightseeing outfit. Crisp white eyelet blouse with tailored khaki shorts — breezy enough for hot, humid days.",
+      "price": 119,
+      "brand": "Loft",
+      "category": "Tops",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/eyelet-blouse-shorts.jpg"
+      ],
+      "attributes": {
+        "occasion": "Tour, Weekend, Beach Vacation, Casual, Summer, Tropical Getaway",
+        "style": "Classic, Relaxed, Effortless",
+        "colors": "White, Khaki",
+        "fit": "Regular",
+        "fabric": "100% Cotton Eyelet (top), 97% Cotton 3% Elastane (shorts)",
+        "care_instructions": "Machine wash cold. Tumble dry low.",
+        "styling_tips": "Add canvas sneakers for walking tours or leather sandals for a more polished look. Great for tropical cities."
+      }
+    },
+    {
+      "sku": "at-026",
+      "name": "Navy Striped Wide-Leg Jumpsuit",
+      "description": "Set sail in this nautical-inspired striped jumpsuit with a flattering belted waist and wide legs. Born for cruise decks and coastal towns.",
+      "price": 168,
+      "brand": "AnnTaylor",
+      "category": "Jumpsuits",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/nautical-jumpsuit.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cruise, Beach Vacation, Brunch, Destination Wedding, Weekend",
+        "style": "Classic, Resort, Polished",
+        "colors": "Navy, White",
+        "fit": "Regular",
+        "fabric": "95% Viscose, 5% Elastane",
+        "care_instructions": "Machine wash cold on delicate. Hang dry.",
+        "styling_tips": "Style with gold accessories and wedge sandals for deck dinners. Throw on a denim jacket for evening breezes."
+      }
+    },
+    {
+      "sku": "at-027",
+      "name": "Sage Linen Blazer & Cropped Pant Set",
+      "description": "Lightweight linen suiting in soothing sage. Perfect for warm-weather meetings or polished travel days in moderate climates.",
+      "price": 215,
+      "brand": "AnnTaylor",
+      "category": "Suiting",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/sage-linen-suit.jpg"
+      ],
+      "attributes": {
+        "occasion": "Professional Meeting, Tour, Work, Summer, Family Gathering, Brunch",
+        "style": "Relaxed, Polished, Effortless",
+        "colors": "Sage",
+        "fit": "Relaxed",
+        "fabric": "100% European Linen",
+        "care_instructions": "Machine wash cold on gentle. Hang dry. Iron on linen setting.",
+        "styling_tips": "Pair with leather loafers for meetings or strappy sandals for weekend brunches. The blazer works solo over a simple dress."
+      }
+    },
+    {
+      "sku": "at-028",
+      "name": "Coral Tiered Maxi Skirt & Tank",
+      "description": "Flow through tropical sunsets in this vibrant coral tiered maxi skirt. Lightweight chiffon tiers catch every warm breeze.",
+      "price": 135,
+      "brand": "AnnTaylor",
+      "category": "Skirts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/coral-tiered-skirt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Destination Wedding, Tropical Getaway, Brunch, Summer",
+        "style": "Bohemian, Feminine, Resort",
+        "colors": "Coral, White",
+        "fit": "Regular",
+        "fabric": "100% Polyester Georgette (skirt), 95% Modal 5% Elastane (tank)",
+        "care_instructions": "Hand wash cold. Hang dry in shade.",
+        "styling_tips": "Perfect with flat sandals for beach ceremonies or wedge heels for destination wedding receptions. Add a denim jacket for cooler evenings."
+      }
+    },
+    {
+      "sku": "at-029",
+      "name": "Lavender Flutter-Sleeve Midi Dress",
+      "description": "Soft and dreamy in pastel lavender, this flutter-sleeve midi dress is effortlessly romantic. A LOFT-inspired favorite for every occasion.",
+      "price": 159,
+      "brand": "Loft",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/lavender-flutter-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Garden Party, Birthday, Brunch, Family Gathering, Spring",
+        "style": "Romantic, Feminine, Polished",
+        "colors": "Lavender",
+        "fit": "Regular",
+        "fabric": "100% Polyester Chiffon with attached slip",
+        "care_instructions": "Machine wash cold on delicate. Hang dry.",
+        "styling_tips": "Style with nude block-heel sandals and a woven clutch for weddings. Add a fitted cardigan for air-conditioned venues."
+      }
+    },
+    {
+      "sku": "at-030",
+      "name": "Sand Raffia-Trim Wrap Dress",
+      "description": "Artisanal raffia trim details elevate this sand-toned wrap dress. A versatile piece for tropical resorts and sunset dinners.",
+      "price": 175,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/raffia-wrap-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cruise, Destination Wedding, Tour, Beach Vacation, Dinner",
+        "style": "Resort, Elegant, Effortless",
+        "colors": "Sand",
+        "fit": "Regular",
+        "fabric": "88% Viscose, 12% Linen with raffia trim",
+        "care_instructions": "Dry clean recommended. Spot clean raffia details.",
+        "styling_tips": "Pair with gold earrings and strappy sandals for cruise dinners. Add a structured clutch for destination wedding receptions."
+      }
+    },
+    {
+      "sku": "at-031",
+      "name": "Black Halter Wide-Leg Jumpsuit",
+      "description": "Sleek, dramatic, unforgettable. This black halter jumpsuit with flowing wide legs makes every cruise dinner a runway moment.",
+      "price": 198,
+      "brand": "AnnTaylor",
+      "category": "Jumpsuits",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-halter-jumpsuit.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cruise, Evening Event, Cocktail Party, Dinner, Anniversary",
+        "style": "Elegant, Sophisticated, Statement",
+        "colors": "Black",
+        "fit": "Regular",
+        "fabric": "95% Polyester, 5% Elastane Crepe",
+        "care_instructions": "Dry clean recommended. Steam to remove wrinkles.",
+        "styling_tips": "Add statement earrings and strappy heels for evening events. A gold cuff bracelet elevates this to formal territory."
+      }
+    },
+    {
+      "sku": "at-032",
+      "name": "Chambray Belted Shirtdress",
+      "description": "A LOFT-inspired wardrobe staple. This soft chambray shirtdress with a self-tie belt goes anywhere — from city tours to casual brunches.",
+      "price": 125,
+      "brand": "Loft",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/chambray-shirtdress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Tour, Weekend, Casual, Summer, Family Gathering, Brunch",
+        "style": "Classic, Relaxed, Effortless",
+        "colors": "Light Blue",
+        "fit": "Regular",
+        "fabric": "100% Lyocell Chambray",
+        "care_instructions": "Machine wash cold. Tumble dry low. Minimal ironing needed.",
+        "styling_tips": "Roll the sleeves and add white sneakers for sightseeing. Swap to espadrilles and a crossbody bag for a market stroll."
+      }
+    },
+    {
+      "sku": "acc-001",
+      "name": "Gold Cascade Statement Necklace",
+      "description": "A cascading gold statement necklace with layered teardrop pendants.",
+      "price": 68,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-statement-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cocktail Party, Evening Event, Birthday, Anniversary, Dinner",
+        "style": "Statement, Glamorous, Bold",
+        "colors": "Gold",
+        "fit": "One Size",
+        "fabric": "Gold-plated brass",
+        "care_instructions": "Avoid contact with perfume. Store in jewelry pouch.",
+        "styling_tips": "Wear over a simple black sheath dress for maximum impact."
+      }
+    },
+    {
+      "sku": "acc-002",
+      "name": "Pearl Drop Earrings with Gold Setting",
+      "description": "Luminous freshwater pearl drops set in brushed gold.",
+      "price": 48,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/pearl-drop-earrings.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Wedding Guest, Luncheon, Professional Meeting, Brunch",
+        "style": "Classic, Elegant, Timeless",
+        "colors": "Pearl, Gold",
+        "fit": "One Size",
+        "fabric": "Freshwater pearl, gold-plated sterling silver",
+        "care_instructions": "Wipe with soft cloth after wearing.",
+        "styling_tips": "Perfect with a blazer for work or a lace dress for weddings."
+      }
+    },
+    {
+      "sku": "acc-003",
+      "name": "Silver Layered Crystal Bracelet",
+      "description": "Delicate triple-strand silver bracelet with dangling crystal charm.",
+      "price": 35,
+      "brand": "Loft",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/silver-crystal-bracelet.jpg"
+      ],
+      "attributes": {
+        "occasion": "Casual, Weekend, Birthday, Brunch, Date Night",
+        "style": "Feminine, Romantic, Polished",
+        "colors": "Silver",
+        "fit": "One Size",
+        "fabric": "Silver-plated brass, crystal pendant",
+        "care_instructions": "Remove before washing hands.",
+        "styling_tips": "Stack with other thin bracelets or wear solo."
+      }
+    },
+    {
+      "sku": "acc-004",
+      "name": "Rose Gold Pavé Stacking Rings",
+      "description": "Set of three rose gold stacking rings with micro-pavé crystals.",
+      "price": 55,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/rose-gold-rings.jpg"
+      ],
+      "attributes": {
+        "occasion": "Date Night, Anniversary, Birthday, Cocktail Party, Evening Event",
+        "style": "Romantic, Feminine, Statement",
+        "colors": "Rose Gold",
+        "fit": "Standard Ring Sizes",
+        "fabric": "Rose gold-plated sterling silver, CZ stones",
+        "care_instructions": "Polish with jewelry cloth.",
+        "styling_tips": "Stack all three or split across both hands."
+      }
+    },
+    {
+      "sku": "acc-005",
+      "name": "Turquoise Beaded Resort Necklace",
+      "description": "Vibrant turquoise beaded statement necklace with golden accents.",
+      "price": 58,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/turquoise-statement-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Tropical Getaway, Brunch, Summer",
+        "style": "Resort, Bohemian, Bold",
+        "colors": "Turquoise, Gold",
+        "fit": "One Size",
+        "fabric": "Natural turquoise stones, gold-plated brass",
+        "care_instructions": "Wipe gently with damp cloth.",
+        "styling_tips": "Pair with a white linen dress for tropical evenings."
+      }
+    },
+    {
+      "sku": "acc-006",
+      "name": "Diamond-Cut Gold Hoop Earrings",
+      "description": "Medium-sized diamond-cut gold hoops that catch the light beautifully.",
+      "price": 42,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-hoop-earrings.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Casual, Weekend, Brunch, Date Night",
+        "style": "Classic, Versatile, Polished",
+        "colors": "Gold",
+        "fit": "One Size",
+        "fabric": "14K gold-plated sterling silver",
+        "care_instructions": "Store in velvet pouch.",
+        "styling_tips": "Goes with everything from blazers to sundresses."
+      }
+    },
+    {
+      "sku": "acc-007",
+      "name": "Beaded Multi-Strand Bracelet Set",
+      "description": "Set of five beaded stretch bracelets in coral, gold, and white.",
+      "price": 32,
+      "brand": "Loft",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/beaded-bracelet-set.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Weekend, Casual, Summer, Tour",
+        "style": "Bohemian, Relaxed, Resort",
+        "colors": "Coral, Gold, White",
+        "fit": "Stretch",
+        "fabric": "Glass beads, elastic cord",
+        "care_instructions": "Remove before swimming.",
+        "styling_tips": "Stack all five or distribute across both wrists."
+      }
+    },
+    {
+      "sku": "acc-008",
+      "name": "Crystal Collar Necklace",
+      "description": "Sparkling crystal collar necklace for show-stopping evenings.",
+      "price": 78,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/crystal-collar-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Evening Event, Cocktail Party, Anniversary, Dinner, Special Event",
+        "style": "Glamorous, Elegant, Statement",
+        "colors": "Crystal, Silver",
+        "fit": "One Size",
+        "fabric": "Swarovski crystals, rhodium-plated brass",
+        "care_instructions": "Handle with care. Store in lined box.",
+        "styling_tips": "Best with strapless or V-neck dresses."
+      }
+    },
+    {
+      "sku": "acc-009",
+      "name": "Geometric Pendant Necklace",
+      "description": "Modern geometric pendant on a fine gold chain.",
+      "price": 38,
+      "brand": "Loft",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/geometric-pendant-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Casual Friday, Lunch, Weekend, Brunch",
+        "style": "Classic, Polished, Versatile",
+        "colors": "Gold, Black",
+        "fit": "One Size",
+        "fabric": "Gold-plated brass, enamel detail",
+        "care_instructions": "Avoid water exposure.",
+        "styling_tips": "Layer over turtlenecks or wear solo with blouses."
+      }
+    },
+    {
+      "sku": "acc-010",
+      "name": "Pearl Strand Classic Necklace",
+      "description": "Single-strand cultured pearl necklace. Refined sophistication.",
+      "price": 65,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/pearl-strand-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Professional Meeting, Luncheon, Wedding Guest, Work, Family Gathering",
+        "style": "Timeless, Classic, Elegant",
+        "colors": "Pearl",
+        "fit": "One Size",
+        "fabric": "Freshwater cultured pearls, sterling silver clasp",
+        "care_instructions": "Last on, first off. Wipe after each wear.",
+        "styling_tips": "Layer with gold chains for modern styling."
+      }
+    },
+    {
+      "sku": "acc-011",
+      "name": "Emerald Crystal Drop Earrings",
+      "description": "Faceted emerald-colored crystal drop earrings with gold bezels.",
+      "price": 52,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/emerald-drop-earrings.jpg"
+      ],
+      "attributes": {
+        "occasion": "Evening Event, Cocktail Party, Dinner, Anniversary, Birthday",
+        "style": "Elegant, Bold, Statement",
+        "colors": "Emerald, Gold",
+        "fit": "One Size",
+        "fabric": "Crystal, gold-plated brass",
+        "care_instructions": "Store separately to prevent scratching.",
+        "styling_tips": "Stunning with black, ivory, or emerald outfits."
+      }
+    },
+    {
+      "sku": "acc-012",
+      "name": "Charm Link Bracelet",
+      "description": "Playful gold link bracelet with heart, star, and moon charms.",
+      "price": 29,
+      "brand": "Loft",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/charm-link-bracelet.jpg"
+      ],
+      "attributes": {
+        "occasion": "Casual, Weekend, Birthday, Family Gathering, Brunch",
+        "style": "Feminine, Relaxed, Polished",
+        "colors": "Gold",
+        "fit": "Adjustable",
+        "fabric": "Gold-plated brass",
+        "care_instructions": "Avoid water. Store flat.",
+        "styling_tips": "Stack with a watch or wear alone."
+      }
+    },
+    {
+      "sku": "acc-013",
+      "name": "Sapphire Cluster Stud Earrings",
+      "description": "Deep sapphire crystal cluster studs set in polished silver.",
+      "price": 45,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/sapphire-stud-earrings.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Professional Meeting, Dinner, Wedding Guest, Evening Event",
+        "style": "Classic, Elegant, Polished",
+        "colors": "Sapphire, Silver",
+        "fit": "One Size",
+        "fabric": "Crystal, rhodium-plated sterling silver",
+        "care_instructions": "Polish with microfiber cloth.",
+        "styling_tips": "Elegant for meetings, sparkly for dinner."
+      }
+    },
+    {
+      "sku": "acc-014",
+      "name": "Seed Bead Tassel Earrings",
+      "description": "Colorful seed bead tassel earrings with gold-tone findings.",
+      "price": 25,
+      "brand": "Loft",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/seed-bead-tassel-earrings.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Summer, Brunch, Weekend",
+        "style": "Bohemian, Resort, Bold",
+        "colors": "Coral, Gold",
+        "fit": "One Size",
+        "fabric": "Glass seed beads, gold-plated brass",
+        "care_instructions": "Handle gently. Remove before swimming.",
+        "styling_tips": "Perfect with off-shoulder tops and sundresses."
+      }
+    },
+    {
+      "sku": "acc-015",
+      "name": "Gold Cuff Bracelet",
+      "description": "Sculptural gold cuff bracelet with a hammered finish.",
+      "price": 58,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-cuff-bracelet.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cocktail Party, Evening Event, Work, Dinner, Special Event",
+        "style": "Bold, Statement, Polished",
+        "colors": "Gold",
+        "fit": "Adjustable",
+        "fabric": "Gold-plated brass",
+        "care_instructions": "Polish with jewelry cloth.",
+        "styling_tips": "Wear on bare wrist above a pushed-up blazer sleeve."
+      }
+    },
+    {
+      "sku": "acc-016",
+      "name": "Ruby Teardrop Pendant Necklace",
+      "description": "Rich ruby-colored teardrop pendant on a delicate gold chain.",
+      "price": 62,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ruby-pendant-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Anniversary, Date Night, Evening Event, Birthday, Dinner",
+        "style": "Romantic, Elegant, Statement",
+        "colors": "Ruby, Gold",
+        "fit": "One Size",
+        "fabric": "Crystal, gold-plated sterling silver",
+        "care_instructions": "Store separately. Avoid perfume contact.",
+        "styling_tips": "Stunning against a deep neckline or white blouse."
+      }
+    },
+    {
+      "sku": "acc-017",
+      "name": "Colorful Bead Stretch Ring Set",
+      "description": "Set of 4 stretch bead rings in sunny pastels.",
+      "price": 22,
+      "brand": "Loft",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/colorful-bead-rings.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Summer, Weekend, Casual, Pool Party",
+        "style": "Bohemian, Relaxed, Resort",
+        "colors": "Multi",
+        "fit": "Stretch",
+        "fabric": "Glass beads, elastic band",
+        "care_instructions": "Remove before water activities.",
+        "styling_tips": "Stack all four for a playful beach look."
+      }
+    },
+    {
+      "sku": "acc-018",
+      "name": "Art Deco Crystal Brooch",
+      "description": "Art Deco-inspired crystal and gold brooch.",
+      "price": 48,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/art-deco-brooch.jpg"
+      ],
+      "attributes": {
+        "occasion": "Professional Meeting, Luncheon, Evening Event, Work, Special Event",
+        "style": "Classic, Elegant, Vintage",
+        "colors": "Crystal, Gold",
+        "fit": "One Size",
+        "fabric": "Crystal, gold-plated brass",
+        "care_instructions": "Handle pin carefully. Store in cushioned box.",
+        "styling_tips": "Pin to a blazer lapel or the center of a scarf."
+      }
+    },
+    {
+      "sku": "acc-019",
+      "name": "Diamond Station Necklace",
+      "description": "Delicate gold chain with spaced CZ diamond stations.",
+      "price": 72,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/diamond-station-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Wedding Guest, Anniversary, Dinner, Professional Meeting",
+        "style": "Classic, Elegant, Timeless",
+        "colors": "Gold",
+        "fit": "One Size",
+        "fabric": "Gold-plated sterling silver, CZ stones",
+        "care_instructions": "Store flat to prevent tangling.",
+        "styling_tips": "Layer with other necklaces or wear alone."
+      }
+    },
+    {
+      "sku": "acc-020",
+      "name": "Mixed Metal Layered Necklace Set",
+      "description": "Pre-layered necklace in mixed gold and silver tones.",
+      "price": 35,
+      "brand": "Loft",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/mixed-metal-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Casual, Weekend, Brunch, Date Night, Birthday",
+        "style": "Versatile, Polished, Relaxed",
+        "colors": "Gold, Silver",
+        "fit": "One Size",
+        "fabric": "Gold and silver-plated brass",
+        "care_instructions": "Avoid water. Store hanging.",
+        "styling_tips": "Works with any neckline."
+      }
+    },
+    {
+      "sku": "acc-021",
+      "name": "Classic Black Leather Pumps",
+      "description": "Timeless pointed-toe pumps in supple black leather.",
+      "price": 148,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-pointed-pumps.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Professional Meeting, Conference, Dinner, Evening Event",
+        "style": "Classic, Professional, Polished",
+        "colors": "Black",
+        "fit": "True to Size",
+        "fabric": "Genuine leather upper, leather sole",
+        "care_instructions": "Condition leather periodically.",
+        "styling_tips": "Essential with pantsuits and sheath dresses."
+      }
+    },
+    {
+      "sku": "acc-022",
+      "name": "Blush Strappy Block Heel Sandals",
+      "description": "Elegant strappy sandals with comfortable block heel in soft blush.",
+      "price": 128,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/nude-strappy-sandals.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Brunch, Date Night, Garden Party",
+        "style": "Feminine, Romantic, Elegant",
+        "colors": "Blush",
+        "fit": "True to Size",
+        "fabric": "Faux leather upper, padded insole",
+        "care_instructions": "Wipe clean with damp cloth.",
+        "styling_tips": "Perfect with midi dresses for garden weddings."
+      }
+    },
+    {
+      "sku": "acc-023",
+      "name": "Navy Suede Ballet Flats",
+      "description": "Soft navy suede ballet flats with delicate bow detail.",
+      "price": 79,
+      "brand": "Loft",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/navy-ballet-flats.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Casual Friday, Weekend, Tour, Travel",
+        "style": "Classic, Relaxed, Versatile",
+        "colors": "Navy",
+        "fit": "True to Size",
+        "fabric": "Suede upper, cushioned insole",
+        "care_instructions": "Protect with suede spray.",
+        "styling_tips": "Pair with cropped trousers or jeans."
+      }
+    },
+    {
+      "sku": "acc-024",
+      "name": "Gold Metallic Evening Heels",
+      "description": "Showstopping gold metallic strappy heels.",
+      "price": 158,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-evening-heels.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cocktail Party, Evening Event, Anniversary, Birthday, New Year",
+        "style": "Glamorous, Statement, Bold",
+        "colors": "Gold",
+        "fit": "True to Size",
+        "fabric": "Metallic leather upper",
+        "care_instructions": "Store in dust bag.",
+        "styling_tips": "Pair with a simple black or jewel-tone dress."
+      }
+    },
+    {
+      "sku": "acc-025",
+      "name": "Tan Leather Espadrille Wedges",
+      "description": "Leather espadrille wedges with jute-wrapped platform.",
+      "price": 89,
+      "brand": "Loft",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/tan-espadrille-wedges.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Summer, Brunch, Weekend",
+        "style": "Resort, Relaxed, Effortless",
+        "colors": "Tan",
+        "fit": "True to Size",
+        "fabric": "Leather upper, jute platform",
+        "care_instructions": "Condition leather. Keep jute dry.",
+        "styling_tips": "Elevates every sundress and linen pant combination."
+      }
+    },
+    {
+      "sku": "acc-026",
+      "name": "Burgundy Patent Kitten Heels",
+      "description": "Refined patent kitten heels in rich burgundy.",
+      "price": 118,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/burgundy-kitten-heels.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Dinner, Luncheon, Professional Meeting, Family Gathering",
+        "style": "Classic, Polished, Sophisticated",
+        "colors": "Burgundy",
+        "fit": "True to Size",
+        "fabric": "Patent faux leather, padded footbed",
+        "care_instructions": "Wipe with damp cloth.",
+        "styling_tips": "Beautiful with charcoal or navy suiting."
+      }
+    },
+    {
+      "sku": "acc-027",
+      "name": "White Leather Slide Sandals",
+      "description": "Clean white leather slide sandals with cushioned footbed.",
+      "price": 69,
+      "brand": "Loft",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/white-slide-sandals.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Casual, Summer, Pool Party, Weekend",
+        "style": "Relaxed, Effortless, Resort",
+        "colors": "White",
+        "fit": "True to Size",
+        "fabric": "Leather upper, rubber sole",
+        "care_instructions": "Wipe clean.",
+        "styling_tips": "Pair with linen pants and a tank."
+      }
+    },
+    {
+      "sku": "acc-028",
+      "name": "Black Suede Ankle Boots",
+      "description": "Sleek black suede ankle boots with a sculpted heel.",
+      "price": 168,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-suede-ankle-boots.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Fall Outing, Dinner, Weekend, Conference",
+        "style": "Classic, Sophisticated, Polished",
+        "colors": "Black",
+        "fit": "True to Size",
+        "fabric": "Suede upper, leather sole",
+        "care_instructions": "Protect with suede spray.",
+        "styling_tips": "Tuck skinny pants in or wear with midi skirts."
+      }
+    },
+    {
+      "sku": "acc-029",
+      "name": "Silver Embellished Mules",
+      "description": "Crystal-embellished silver mules with low block heel.",
+      "price": 138,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/silver-embellished-mules.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cocktail Party, Evening Event, Birthday, Anniversary, Dinner",
+        "style": "Glamorous, Elegant, Statement",
+        "colors": "Silver",
+        "fit": "True to Size",
+        "fabric": "Satin upper with crystal embellishment",
+        "care_instructions": "Store in dust bag.",
+        "styling_tips": "Elegant with wide-leg trousers or evening dresses."
+      }
+    },
+    {
+      "sku": "acc-030",
+      "name": "Leopard Print Loafers",
+      "description": "Classic loafer silhouette in chic leopard print.",
+      "price": 85,
+      "brand": "Loft",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/leopard-loafers.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Casual Friday, Weekend, Fall Outing, Brunch",
+        "style": "Bold, Classic, Effortless",
+        "colors": "Leopard",
+        "fit": "True to Size",
+        "fabric": "Calf hair upper, leather sole",
+        "care_instructions": "Brush gently.",
+        "styling_tips": "Treat as a neutral — pairs with denim, black, navy."
+      }
+    },
+    {
+      "sku": "acc-031",
+      "name": "Nude Patent D'Orsay Heels",
+      "description": "D.Orsay silhouette in nude patent with mid-height heel.",
+      "price": 135,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/nude-dorsay-heels.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Work, Luncheon, Dinner, Destination Wedding",
+        "style": "Elegant, Classic, Feminine",
+        "colors": "Nude",
+        "fit": "True to Size",
+        "fabric": "Patent faux leather",
+        "care_instructions": "Wipe with soft cloth.",
+        "styling_tips": "The shoe that elongates any outfit."
+      }
+    },
+    {
+      "sku": "acc-032",
+      "name": "Canvas Lace-Up Sneakers",
+      "description": "Crisp white canvas sneakers for all-day comfort.",
+      "price": 59,
+      "brand": "Loft",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/white-canvas-sneakers.jpg"
+      ],
+      "attributes": {
+        "occasion": "Tour, Travel, Weekend, Casual, Summer",
+        "style": "Relaxed, Effortless, Versatile",
+        "colors": "White",
+        "fit": "True to Size",
+        "fabric": "Cotton canvas, rubber sole",
+        "care_instructions": "Machine wash cold.",
+        "styling_tips": "Dress up with a blazer or down with shorts."
+      }
+    },
+    {
+      "sku": "acc-033",
+      "name": "Emerald Velvet Mules",
+      "description": "Rich emerald velvet mules with pointed toe.",
+      "price": 125,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/emerald-velvet-mules.jpg"
+      ],
+      "attributes": {
+        "occasion": "Dinner, Cocktail Party, Birthday, Family Gathering, Evening Event",
+        "style": "Bold, Elegant, Statement",
+        "colors": "Emerald",
+        "fit": "True to Size",
+        "fabric": "Velvet upper, leather sole",
+        "care_instructions": "Avoid water.",
+        "styling_tips": "Pairs with black trousers or a gold top."
+      }
+    },
+    {
+      "sku": "acc-034",
+      "name": "Cognac Leather Knee-High Boots",
+      "description": "Butter-soft cognac leather knee-high boots.",
+      "price": 198,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/cognac-knee-high-boots.jpg"
+      ],
+      "attributes": {
+        "occasion": "Fall Outing, Weekend, Work, Family Gathering, Travel",
+        "style": "Classic, Sophisticated, Polished",
+        "colors": "Cognac",
+        "fit": "True to Size",
+        "fabric": "Genuine leather, side zip",
+        "care_instructions": "Condition seasonally.",
+        "styling_tips": "Perfect over tights with a sweater dress."
+      }
+    },
+    {
+      "sku": "acc-035",
+      "name": "Blush Satin Pointed Flats",
+      "description": "Soft blush satin flats with pointed toe.",
+      "price": 72,
+      "brand": "Loft",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/nude-strappy-sandals.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Brunch, Date Night, Family Gathering, Spring",
+        "style": "Feminine, Romantic, Polished",
+        "colors": "Blush",
+        "fit": "True to Size",
+        "fabric": "Satin upper",
+        "care_instructions": "Spot clean only.",
+        "styling_tips": "Lovely with floral midi dresses."
+      }
+    },
+    {
+      "sku": "acc-036",
+      "name": "Denim Blue Block Heel Sandals",
+      "description": "Fun denim-look block heel sandals.",
+      "price": 78,
+      "brand": "Loft",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/denim-block-heel-sandals.jpg"
+      ],
+      "attributes": {
+        "occasion": "Summer, Weekend, Brunch, Casual, Beach Vacation",
+        "style": "Relaxed, Effortless, Resort",
+        "colors": "Denim Blue",
+        "fit": "True to Size",
+        "fabric": "Denim fabric upper",
+        "care_instructions": "Wipe clean.",
+        "styling_tips": "Cute with white jeans or sundresses."
+      }
+    },
+    {
+      "sku": "acc-037",
+      "name": "Red Patent Pointed Pumps",
+      "description": "Power red patent pumps with confident 3-inch heel.",
+      "price": 142,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/red-patent-pumps.jpg"
+      ],
+      "attributes": {
+        "occasion": "Date Night, Birthday, Cocktail Party, Dinner, Special Event",
+        "style": "Bold, Statement, Glamorous",
+        "colors": "Red",
+        "fit": "True to Size",
+        "fabric": "Patent leather upper",
+        "care_instructions": "Wipe with soft cloth.",
+        "styling_tips": "Pair with black or navy for bold contrast."
+      }
+    },
+    {
+      "sku": "acc-038",
+      "name": "Pearl-Embellished Slingbacks",
+      "description": "Ivory slingback heels adorned with tiny pearl details.",
+      "price": 155,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/pearl-slingback-heels.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Luncheon, Anniversary, Special Event",
+        "style": "Elegant, Feminine, Timeless",
+        "colors": "Ivory",
+        "fit": "True to Size",
+        "fabric": "Satin upper, pearl embellishment",
+        "care_instructions": "Handle delicately.",
+        "styling_tips": "Made for lace dresses and floral occasions."
+      }
+    },
+    {
+      "sku": "acc-039",
+      "name": "Raffia Platform Sandals",
+      "description": "Raffia platform sandals with braided straps.",
+      "price": 82,
+      "brand": "Loft",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/raffia-platform-sandals.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Tropical Getaway, Summer, Tour",
+        "style": "Resort, Bohemian, Relaxed",
+        "colors": "Natural",
+        "fit": "True to Size",
+        "fabric": "Raffia, cork platform",
+        "care_instructions": "Keep dry.",
+        "styling_tips": "Perfect with maxi dresses and cover-ups."
+      }
+    },
+    {
+      "sku": "acc-040",
+      "name": "Black Satin Evening Pumps",
+      "description": "Classic black satin pumps with sleek pointed toe.",
+      "price": 145,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-satin-pumps.jpg"
+      ],
+      "attributes": {
+        "occasion": "Evening Event, Cocktail Party, Anniversary, Dinner, New Year",
+        "style": "Elegant, Sophisticated, Glamorous",
+        "colors": "Black",
+        "fit": "True to Size",
+        "fabric": "Satin upper, leather sole",
+        "care_instructions": "Spot clean only.",
+        "styling_tips": "Pair with velvet or sequin dresses."
+      }
+    },
+    {
+      "sku": "acc-041",
+      "name": "Cognac Leather Belt with Gold Buckle",
+      "description": "Rich cognac Italian leather belt with polished gold buckle.",
+      "price": 58,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/cognac-leather-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Casual, Weekend, Professional Meeting, Brunch",
+        "style": "Classic, Versatile, Polished",
+        "colors": "Cognac",
+        "fit": "Standard",
+        "fabric": "Italian leather",
+        "care_instructions": "Condition periodically.",
+        "styling_tips": "Essential with high-waisted trousers."
+      }
+    },
+    {
+      "sku": "acc-042",
+      "name": "Wide Black Leather Waist Belt",
+      "description": "Statement wide leather waist belt with brushed gold buckle.",
+      "price": 68,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-waist-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Cocktail Party, Dinner, Evening Event, Professional Meeting",
+        "style": "Bold, Statement, Polished",
+        "colors": "Black",
+        "fit": "Standard",
+        "fabric": "Genuine leather",
+        "care_instructions": "Condition seasonally.",
+        "styling_tips": "Cinch over blazers and dresses for instant shape."
+      }
+    },
+    {
+      "sku": "acc-043",
+      "name": "Woven Raffia Belt with Tortoise Buckle",
+      "description": "Hand-woven raffia belt with tortoise resin buckle.",
+      "price": 42,
+      "brand": "Loft",
+      "category": "Belts",
+      "sizes": [
+        "XS/S",
+        "M/L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/raffia-woven-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Summer, Weekend, Brunch",
+        "style": "Resort, Relaxed, Bohemian",
+        "colors": "Natural, Tan",
+        "fit": "Standard",
+        "fabric": "Natural raffia",
+        "care_instructions": "Keep dry.",
+        "styling_tips": "Perfect over linen dresses."
+      }
+    },
+    {
+      "sku": "acc-044",
+      "name": "Gold Chain Link Belt",
+      "description": "Decorative gold chain belt with adjustable hook closure.",
+      "price": 55,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-chain-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cocktail Party, Dinner, Evening Event, Birthday, Luncheon",
+        "style": "Elegant, Glamorous, Statement",
+        "colors": "Gold",
+        "fit": "Adjustable",
+        "fabric": "Gold-plated metal links",
+        "care_instructions": "Store flat.",
+        "styling_tips": "Drape loosely over a sheath dress at the hip."
+      }
+    },
+    {
+      "sku": "acc-045",
+      "name": "Navy & White Striped Stretch Belt",
+      "description": "Nautical-inspired striped stretch belt with silver D-ring.",
+      "price": 32,
+      "brand": "Loft",
+      "category": "Belts",
+      "sizes": [
+        "XS/S",
+        "M/L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/striped-stretch-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cruise, Weekend, Casual, Beach Vacation, Tour",
+        "style": "Classic, Relaxed, Resort",
+        "colors": "Navy, White",
+        "fit": "Stretch",
+        "fabric": "Woven elastic",
+        "care_instructions": "Hand wash if needed.",
+        "styling_tips": "Pair with white shorts and navy blazer."
+      }
+    },
+    {
+      "sku": "acc-046",
+      "name": "Skinny Black Patent Belt",
+      "description": "Sleek skinny patent belt with petite gold buckle.",
+      "price": 45,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/skinny-patent-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Dinner, Cocktail Party, Professional Meeting, Evening Event",
+        "style": "Classic, Polished, Elegant",
+        "colors": "Black",
+        "fit": "Standard",
+        "fabric": "Patent faux leather",
+        "care_instructions": "Wipe clean.",
+        "styling_tips": "Thread through trouser loops or cinch over dresses."
+      }
+    },
+    {
+      "sku": "acc-047",
+      "name": "Braided Cognac Leather Belt",
+      "description": "Hand-braided cognac leather belt with antique brass buckle.",
+      "price": 38,
+      "brand": "Loft",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/braided-cognac-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Weekend, Casual, Fall Outing, Brunch, Family Gathering",
+        "style": "Relaxed, Classic, Effortless",
+        "colors": "Cognac",
+        "fit": "Standard",
+        "fabric": "Braided leather",
+        "care_instructions": "Condition to prevent drying.",
+        "styling_tips": "Great with denim and linen trousers."
+      }
+    },
+    {
+      "sku": "acc-048",
+      "name": "Pearl-Embellished Waist Belt",
+      "description": "Ivory leather waist belt adorned with pearl clusters.",
+      "price": 65,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/pearl-waist-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Luncheon, Special Event, Anniversary",
+        "style": "Elegant, Feminine, Statement",
+        "colors": "Ivory, Gold",
+        "fit": "Standard",
+        "fabric": "Leather with pearl embellishment",
+        "care_instructions": "Handle with care.",
+        "styling_tips": "Stunning over wedding guest dresses."
+      }
+    },
+    {
+      "sku": "acc-049",
+      "name": "Canvas Web Belt with D-Ring",
+      "description": "Casual cotton canvas web belt with double D-ring closure.",
+      "price": 28,
+      "brand": "Loft",
+      "category": "Belts",
+      "sizes": [
+        "XS/S",
+        "M/L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/canvas-web-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Tour, Travel, Casual, Summer, Weekend",
+        "style": "Relaxed, Effortless, Versatile",
+        "colors": "Khaki, Navy",
+        "fit": "Adjustable",
+        "fabric": "Cotton canvas",
+        "care_instructions": "Machine washable.",
+        "styling_tips": "Perfect with casual linen pants."
+      }
+    },
+    {
+      "sku": "acc-050",
+      "name": "Red Leather Statement Belt",
+      "description": "Vivid red leather belt with sleek silver buckle.",
+      "price": 62,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/red-leather-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Date Night, Birthday, Cocktail Party, Dinner, Special Event",
+        "style": "Bold, Statement, Polished",
+        "colors": "Red",
+        "fit": "Standard",
+        "fabric": "Genuine leather",
+        "care_instructions": "Condition leather.",
+        "styling_tips": "Add a pop of color to black or navy outfits."
+      }
+    },
+    {
+      "sku": "acc-051",
+      "name": "Suede Obi Wrap Belt",
+      "description": "Wide suede obi-style wrap belt in warm camel.",
+      "price": 58,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS/S",
+        "M/L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/suede-obi-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Dinner, Luncheon, Evening Event, Work, Family Gathering",
+        "style": "Elegant, Feminine, Statement",
+        "colors": "Camel",
+        "fit": "Adjustable",
+        "fabric": "Genuine suede",
+        "care_instructions": "Protect with suede spray.",
+        "styling_tips": "Cinch over dresses and long cardigans."
+      }
+    },
+    {
+      "sku": "acc-052",
+      "name": "Leopard Print Calf Hair Belt",
+      "description": "Leopard print calf hair belt with gold buckle.",
+      "price": 48,
+      "brand": "Loft",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/leopard-calf-hair-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Weekend, Casual Friday, Brunch, Fall Outing",
+        "style": "Bold, Classic, Effortless",
+        "colors": "Leopard",
+        "fit": "Standard",
+        "fabric": "Calf hair on leather",
+        "care_instructions": "Brush with soft brush.",
+        "styling_tips": "Works with denim, black, cream, and olive."
+      }
+    },
+    {
+      "sku": "acc-053",
+      "name": "Double-Wrap Leather Belt",
+      "description": "Double-wrap leather belt with dual gold buckles.",
+      "price": 52,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/double-wrap-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Dinner, Weekend, Professional Meeting, Date Night",
+        "style": "Polished, Classic, Sophisticated",
+        "colors": "Black, Gold",
+        "fit": "Standard",
+        "fabric": "Genuine leather",
+        "care_instructions": "Condition regularly.",
+        "styling_tips": "Adds structural interest to simple dresses."
+      }
+    },
+    {
+      "sku": "acc-054",
+      "name": "Woven Straw Belt",
+      "description": "Lightweight woven straw belt with wooden buckle.",
+      "price": 30,
+      "brand": "Loft",
+      "category": "Belts",
+      "sizes": [
+        "XS/S",
+        "M/L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/woven-straw-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Summer, Tropical Getaway, Weekend, Brunch",
+        "style": "Resort, Bohemian, Relaxed",
+        "colors": "Natural",
+        "fit": "Standard",
+        "fabric": "Natural straw",
+        "care_instructions": "Keep dry.",
+        "styling_tips": "Perfect over flowy summer dresses."
+      }
+    },
+    {
+      "sku": "acc-055",
+      "name": "Metallic Silver Waist Belt",
+      "description": "Sleek metallic silver belt with polished finish.",
+      "price": 55,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/metallic-silver-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cocktail Party, Evening Event, New Year, Birthday, Anniversary",
+        "style": "Glamorous, Statement, Bold",
+        "colors": "Silver",
+        "fit": "Standard",
+        "fabric": "Metallic leather",
+        "care_instructions": "Store flat.",
+        "styling_tips": "Pairs with sequin or velvet dresses."
+      }
+    },
+    {
+      "sku": "acc-056",
+      "name": "Elastic Cinch Belt in Olive",
+      "description": "Stretchy elastic cinch belt in earthy olive.",
+      "price": 28,
+      "brand": "Loft",
+      "category": "Belts",
+      "sizes": [
+        "XS/S",
+        "M/L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/olive-elastic-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Weekend, Casual, Fall Outing, Travel, Family Gathering",
+        "style": "Relaxed, Versatile, Effortless",
+        "colors": "Olive",
+        "fit": "Stretch",
+        "fabric": "Elastic, metal clasp",
+        "care_instructions": "Hand wash if needed.",
+        "styling_tips": "Adds shape to oversized sweaters."
+      }
+    },
+    {
+      "sku": "acc-057",
+      "name": "Croc-Embossed Leather Belt",
+      "description": "Croc-embossed leather belt with gold rectangular buckle.",
+      "price": 62,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/croc-embossed-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Professional Meeting, Dinner, Luncheon, Conference",
+        "style": "Sophisticated, Classic, Polished",
+        "colors": "Black",
+        "fit": "Standard",
+        "fabric": "Embossed genuine leather",
+        "care_instructions": "Condition periodically.",
+        "styling_tips": "Elevates any suiting look."
+      }
+    },
+    {
+      "sku": "acc-058",
+      "name": "Colorblock Leather Belt",
+      "description": "Two-tone colorblock belt in blush and cognac.",
+      "price": 35,
+      "brand": "Loft",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/colorblock-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Weekend, Brunch, Casual, Spring, Family Gathering",
+        "style": "Feminine, Polished, Versatile",
+        "colors": "Blush, Cognac",
+        "fit": "Standard",
+        "fabric": "Genuine leather",
+        "care_instructions": "Condition both tones.",
+        "styling_tips": "Fun with jeans and a tucked-in blouse."
+      }
+    },
+    {
+      "sku": "acc-059",
+      "name": "Chain & Leather Hybrid Belt",
+      "description": "Half chain, half leather belt blending edge with elegance.",
+      "price": 68,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/chain-leather-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cocktail Party, Date Night, Evening Event, Dinner, Birthday",
+        "style": "Statement, Bold, Glamorous",
+        "colors": "Black, Gold",
+        "fit": "Standard",
+        "fabric": "Leather and gold-plated chain",
+        "care_instructions": "Store flat.",
+        "styling_tips": "Incredible over a black dress."
+      }
+    },
+    {
+      "sku": "acc-060",
+      "name": "Cotton Rope Belt with Tassel",
+      "description": "Twisted cotton rope belt with decorative tassels.",
+      "price": 25,
+      "brand": "Loft",
+      "category": "Belts",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/cotton-rope-belt.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Summer, Tropical Getaway, Pool Party",
+        "style": "Bohemian, Resort, Relaxed",
+        "colors": "White, Natural",
+        "fit": "Adjustable",
+        "fabric": "Cotton rope",
+        "care_instructions": "Hand wash.",
+        "styling_tips": "Tie over kaftans and maxi dresses."
+      }
+    },
+    {
+      "sku": "acc-061",
+      "name": "Pink Floral Silk Scarf",
+      "description": "Luxurious silk scarf in soft pink with rose floral print.",
+      "price": 68,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/silk-floral-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Brunch, Garden Party, Luncheon, Spring, Wedding Guest",
+        "style": "Romantic, Feminine, Elegant",
+        "colors": "Pink, Cream",
+        "fit": "One Size",
+        "fabric": "100% Mulberry silk",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Tie as a neckerchief or drape over shoulders."
+      }
+    },
+    {
+      "sku": "acc-062",
+      "name": "Camel Cashmere Wrap Scarf",
+      "description": "Oversized cashmere wrap in warm camel with fringe ends.",
+      "price": 98,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/cashmere-wrap-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Travel, Fall Outing, Work, Weekend, Family Gathering",
+        "style": "Classic, Cozy, Polished",
+        "colors": "Camel",
+        "fit": "One Size",
+        "fabric": "100% Cashmere",
+        "care_instructions": "Dry clean or hand wash cold.",
+        "styling_tips": "Drape over a blazer or wear as a shawl on flights."
+      }
+    },
+    {
+      "sku": "acc-063",
+      "name": "Coral Striped Cotton Scarf",
+      "description": "Lightweight cotton scarf in coral and white stripes.",
+      "price": 38,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/striped-cotton-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Summer, Cruise, Weekend, Casual",
+        "style": "Resort, Relaxed, Effortless",
+        "colors": "Coral, White",
+        "fit": "One Size",
+        "fabric": "100% Cotton",
+        "care_instructions": "Machine wash cold.",
+        "styling_tips": "Tie as a headband or use as a beach wrap."
+      }
+    },
+    {
+      "sku": "acc-064",
+      "name": "Navy Polka Dot Silk Neck Scarf",
+      "description": "Classic navy silk neck scarf with polka dots.",
+      "price": 55,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/navy-silk-neck-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Professional Meeting, Brunch, Luncheon, Casual Friday",
+        "style": "Classic, Polished, Versatile",
+        "colors": "Navy, White",
+        "fit": "One Size",
+        "fabric": "100% Silk twill",
+        "care_instructions": "Dry clean recommended.",
+        "styling_tips": "Tie at the neck over a white blouse."
+      }
+    },
+    {
+      "sku": "acc-065",
+      "name": "Leopard Print Chiffon Scarf",
+      "description": "Lightweight chiffon scarf in timeless leopard print.",
+      "price": 35,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/leopard-print-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Weekend, Casual, Fall Outing, Brunch, Date Night",
+        "style": "Bold, Classic, Effortless",
+        "colors": "Leopard",
+        "fit": "One Size",
+        "fabric": "100% Polyester chiffon",
+        "care_instructions": "Hand wash cold.",
+        "styling_tips": "Layer with solid outfits or tie to bag."
+      }
+    },
+    {
+      "sku": "acc-066",
+      "name": "Ivory Silk Oblong Scarf",
+      "description": "Pure ivory silk oblong scarf with jacquard pattern.",
+      "price": 62,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-silk-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Luncheon, Anniversary, Special Event",
+        "style": "Elegant, Timeless, Feminine",
+        "colors": "Ivory",
+        "fit": "One Size",
+        "fabric": "100% Silk jacquard",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Drape over shoulders at weddings."
+      }
+    },
+    {
+      "sku": "acc-067",
+      "name": "Tie-Dye Cotton Sarong Scarf",
+      "description": "Oversized tie-dye cotton sarong that doubles as scarf.",
+      "price": 32,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/tie-dye-sarong-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Pool Party, Tropical Getaway, Summer, Cruise",
+        "style": "Resort, Bohemian, Relaxed",
+        "colors": "Blue, White",
+        "fit": "One Size",
+        "fabric": "100% Cotton voile",
+        "care_instructions": "Machine wash cold.",
+        "styling_tips": "Wrap as sarong or drape over shoulders."
+      }
+    },
+    {
+      "sku": "acc-068",
+      "name": "Emerald Green Silk Scarf",
+      "description": "Rich emerald silk scarf with hand-rolled edges.",
+      "price": 58,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/emerald-silk-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Dinner, Evening Event, Cocktail Party, Professional Meeting, Special Event",
+        "style": "Sophisticated, Bold, Elegant",
+        "colors": "Emerald",
+        "fit": "One Size",
+        "fabric": "100% Silk",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Drape over a black evening dress."
+      }
+    },
+    {
+      "sku": "acc-069",
+      "name": "Plaid Blanket Scarf",
+      "description": "Oversized plaid blanket scarf in red and black.",
+      "price": 45,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/plaid-blanket-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Fall Outing, Weekend, Travel, Family Gathering, Casual",
+        "style": "Cozy, Classic, Relaxed",
+        "colors": "Red, Black, Cream",
+        "fit": "One Size",
+        "fabric": "Acrylic/Wool blend",
+        "care_instructions": "Dry clean or hand wash cold.",
+        "styling_tips": "Drape over a leather jacket or wrap as shawl."
+      }
+    },
+    {
+      "sku": "acc-070",
+      "name": "Gold Metallic Evening Wrap",
+      "description": "Shimmering gold metallic evening wrap.",
+      "price": 75,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-metallic-wrap.jpg"
+      ],
+      "attributes": {
+        "occasion": "Evening Event, Cocktail Party, New Year, Anniversary, Birthday",
+        "style": "Glamorous, Statement, Elegant",
+        "colors": "Gold",
+        "fit": "One Size",
+        "fabric": "Metallic thread blend",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Drape over shoulders with evening gowns."
+      }
+    },
+    {
+      "sku": "acc-071",
+      "name": "Blush Ombré Silk Scarf",
+      "description": "Delicate ombré silk scarf from blush to deep rose.",
+      "price": 65,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/blush-ombre-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Spring, Brunch, Garden Party, Wedding Guest, Luncheon",
+        "style": "Romantic, Feminine, Polished",
+        "colors": "Blush, Rose",
+        "fit": "One Size",
+        "fabric": "100% Silk",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Tie loosely at the neck or weave through hair."
+      }
+    },
+    {
+      "sku": "acc-072",
+      "name": "Geometric Print Cotton Scarf",
+      "description": "Modern geometric print cotton scarf.",
+      "price": 30,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/geometric-cotton-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Weekend, Casual, Travel, Tour",
+        "style": "Classic, Versatile, Polished",
+        "colors": "Navy, Cream, Mustard",
+        "fit": "One Size",
+        "fabric": "100% Cotton",
+        "care_instructions": "Machine wash cold.",
+        "styling_tips": "Loop around neck or tie as a hair scarf."
+      }
+    },
+    {
+      "sku": "acc-073",
+      "name": "Burgundy Velvet Evening Scarf",
+      "description": "Lush burgundy velvet scarf with silk lining.",
+      "price": 72,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/burgundy-velvet-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Evening Event, Dinner, Anniversary, Birthday, Cocktail Party",
+        "style": "Elegant, Bold, Sophisticated",
+        "colors": "Burgundy",
+        "fit": "One Size",
+        "fabric": "Velvet with silk lining",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Drape over a black dress for a regal look."
+      }
+    },
+    {
+      "sku": "acc-074",
+      "name": "Tropical Floral Chiffon Scarf",
+      "description": "Flowing tropical floral chiffon scarf.",
+      "price": 28,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/tropical-floral-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Tropical Getaway, Summer, Brunch",
+        "style": "Resort, Feminine, Relaxed",
+        "colors": "Teal, Pink, Green",
+        "fit": "One Size",
+        "fabric": "100% Polyester chiffon",
+        "care_instructions": "Hand wash cold.",
+        "styling_tips": "Wear as sarong or draped over swimsuit."
+      }
+    },
+    {
+      "sku": "acc-075",
+      "name": "Chain Print Silk Square Scarf",
+      "description": "Classic chain-link print silk square scarf.",
+      "price": 68,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/chain-print-silk-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Professional Meeting, Luncheon, Brunch, Conference",
+        "style": "Classic, Sophisticated, Polished",
+        "colors": "Navy, Gold",
+        "fit": "One Size",
+        "fabric": "100% Silk twill",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Fold diagonally and tie at neck."
+      }
+    },
+    {
+      "sku": "acc-076",
+      "name": "Boho Fringe Knit Scarf",
+      "description": "Chunky knit scarf in dusty rose with boho fringe.",
+      "price": 40,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/boho-fringe-knit-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Fall Outing, Weekend, Casual, Travel, Family Gathering",
+        "style": "Bohemian, Cozy, Relaxed",
+        "colors": "Dusty Rose",
+        "fit": "One Size",
+        "fabric": "Acrylic/Cotton blend",
+        "care_instructions": "Hand wash cold.",
+        "styling_tips": "Wrap twice with a denim jacket and boots."
+      }
+    },
+    {
+      "sku": "acc-077",
+      "name": "Black & White Abstract Silk Scarf",
+      "description": "Graphic black and white abstract print on silk.",
+      "price": 60,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-white-abstract-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Dinner, Evening Event, Professional Meeting, Date Night",
+        "style": "Sophisticated, Bold, Classic",
+        "colors": "Black, White",
+        "fit": "One Size",
+        "fabric": "100% Silk",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Tie as bold neck accent with monochrome outfits."
+      }
+    },
+    {
+      "sku": "acc-078",
+      "name": "Pastel Watercolor Lightweight Scarf",
+      "description": "Dreamy pastel watercolor scarf in featherlight weave.",
+      "price": 32,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/pastel-watercolor-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Spring, Garden Party, Brunch, Weekend, Wedding Guest",
+        "style": "Romantic, Feminine, Relaxed",
+        "colors": "Lavender, Peach, Sky Blue",
+        "fit": "One Size",
+        "fabric": "Modal/Cotton blend",
+        "care_instructions": "Hand wash cold.",
+        "styling_tips": "Beautiful over a white sundress."
+      }
+    },
+    {
+      "sku": "acc-079",
+      "name": "Red Silk Power Scarf",
+      "description": "Vivid red silk scarf for commanding attention.",
+      "price": 58,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/red-silk-power-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Professional Meeting, Conference, Work, Dinner, Special Event",
+        "style": "Bold, Polished, Statement",
+        "colors": "Red",
+        "fit": "One Size",
+        "fabric": "100% Silk twill",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Tie at neck over a white shirt for power dressing."
+      }
+    },
+    {
+      "sku": "acc-080",
+      "name": "Denim Blue Chambray Scarf",
+      "description": "Soft chambray scarf in washed denim blue.",
+      "price": 28,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/denim-chambray-scarf.jpg"
+      ],
+      "attributes": {
+        "occasion": "Casual, Weekend, Travel, Tour, Summer",
+        "style": "Relaxed, Effortless, Versatile",
+        "colors": "Denim Blue",
+        "fit": "One Size",
+        "fabric": "100% Cotton chambray",
+        "care_instructions": "Machine wash cold.",
+        "styling_tips": "Knot casually with a white tee."
+      }
+    },
+    {
+      "sku": "acc-081",
+      "name": "Black Structured Leather Tote",
+      "description": "Spacious structured leather tote with interior organizer.",
+      "price": 178,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-leather-tote.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Professional Meeting, Conference, Travel, Casual",
+        "style": "Classic, Professional, Polished",
+        "colors": "Black",
+        "fit": "One Size",
+        "fabric": "Genuine leather, cotton lining",
+        "care_instructions": "Condition quarterly.",
+        "styling_tips": "The work tote that goes from meetings to dinner."
+      }
+    },
+    {
+      "sku": "acc-082",
+      "name": "Cream Quilted Crossbody Bag",
+      "description": "Quilted cream crossbody with gold chain strap.",
+      "price": 118,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/cream-crossbody-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Brunch, Date Night, Dinner, Cocktail Party, Weekend",
+        "style": "Elegant, Feminine, Polished",
+        "colors": "Cream, Gold",
+        "fit": "One Size",
+        "fabric": "Quilted faux leather, gold hardware",
+        "care_instructions": "Wipe clean.",
+        "styling_tips": "Ideal for evenings when you need just essentials."
+      }
+    },
+    {
+      "sku": "acc-083",
+      "name": "Woven Straw Market Tote",
+      "description": "Hand-woven straw tote with leather handles.",
+      "price": 68,
+      "brand": "Loft",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/straw-tote-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Summer, Weekend, Tour",
+        "style": "Resort, Bohemian, Relaxed",
+        "colors": "Natural, Tan",
+        "fit": "One Size",
+        "fabric": "Natural straw, leather handles",
+        "care_instructions": "Keep dry.",
+        "styling_tips": "Throw in a scarf and sunglasses for summer."
+      }
+    },
+    {
+      "sku": "acc-084",
+      "name": "Cognac Leather Satchel",
+      "description": "Structured cognac leather satchel with top handle.",
+      "price": 198,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/cognac-satchel-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Professional Meeting, Travel, Weekend, Fall Outing",
+        "style": "Classic, Sophisticated, Polished",
+        "colors": "Cognac",
+        "fit": "One Size",
+        "fabric": "Genuine leather, suede lining",
+        "care_instructions": "Condition regularly.",
+        "styling_tips": "Elegant with suiting and weekend denim."
+      }
+    },
+    {
+      "sku": "acc-085",
+      "name": "Rose Gold Metallic Envelope Clutch",
+      "description": "Shimmering rose gold envelope clutch.",
+      "price": 88,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/rose-gold-clutch.jpg"
+      ],
+      "attributes": {
+        "occasion": "Cocktail Party, Evening Event, Birthday, Anniversary, New Year",
+        "style": "Glamorous, Statement, Elegant",
+        "colors": "Rose Gold",
+        "fit": "One Size",
+        "fabric": "Metallic faux leather",
+        "care_instructions": "Store in dust bag.",
+        "styling_tips": "Tuck under the arm with a cocktail dress."
+      }
+    },
+    {
+      "sku": "acc-086",
+      "name": "Canvas & Leather Weekender Tote",
+      "description": "Roomy canvas tote with leather trim.",
+      "price": 98,
+      "brand": "Loft",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/canvas-weekender-tote.jpg"
+      ],
+      "attributes": {
+        "occasion": "Travel, Tour, Weekend, Beach Vacation, Cruise",
+        "style": "Relaxed, Effortless, Versatile",
+        "colors": "Navy, Cognac",
+        "fit": "One Size",
+        "fabric": "Cotton canvas, leather trim",
+        "care_instructions": "Spot clean canvas.",
+        "styling_tips": "Pack essentials for a day trip."
+      }
+    },
+    {
+      "sku": "acc-087",
+      "name": "Navy Leather Shoulder Bag",
+      "description": "Sleek navy leather shoulder bag with gold hardware.",
+      "price": 158,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/navy-leather-shoulder-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Dinner, Professional Meeting, Luncheon, Family Gathering",
+        "style": "Classic, Professional, Polished",
+        "colors": "Navy",
+        "fit": "One Size",
+        "fabric": "Genuine leather, gold hardware",
+        "care_instructions": "Condition leather.",
+        "styling_tips": "A polished alternative to black."
+      }
+    },
+    {
+      "sku": "acc-088",
+      "name": "Colorblock Crossbody Bag",
+      "description": "Playful colorblock crossbody in blush and tan.",
+      "price": 55,
+      "brand": "Loft",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/colorblock-crossbody.jpg"
+      ],
+      "attributes": {
+        "occasion": "Casual, Weekend, Tour, Brunch, Summer",
+        "style": "Feminine, Relaxed, Versatile",
+        "colors": "Blush, Tan",
+        "fit": "One Size",
+        "fabric": "Faux leather, gold hardware",
+        "care_instructions": "Wipe clean.",
+        "styling_tips": "Hands-free style for sightseeing."
+      }
+    },
+    {
+      "sku": "acc-089",
+      "name": "Black Satin Evening Clutch",
+      "description": "Sleek black satin clutch with crystal clasp.",
+      "price": 95,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-satin-clutch.jpg"
+      ],
+      "attributes": {
+        "occasion": "Evening Event, Cocktail Party, Anniversary, Dinner, Special Event",
+        "style": "Elegant, Sophisticated, Glamorous",
+        "colors": "Black",
+        "fit": "One Size",
+        "fabric": "Satin, crystal embellishment",
+        "care_instructions": "Spot clean only.",
+        "styling_tips": "Works with every formal outfit."
+      }
+    },
+    {
+      "sku": "acc-090",
+      "name": "Straw Circle Crossbody",
+      "description": "Round woven straw crossbody with leather strap.",
+      "price": 52,
+      "brand": "Loft",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/straw-circle-crossbody.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Tropical Getaway, Summer, Brunch",
+        "style": "Resort, Bohemian, Relaxed",
+        "colors": "Natural",
+        "fit": "One Size",
+        "fabric": "Woven rattan, leather strap",
+        "care_instructions": "Keep dry.",
+        "styling_tips": "Perfect with sundresses and kaftans."
+      }
+    },
+    {
+      "sku": "acc-091",
+      "name": "Burgundy Leather Belt Bag",
+      "description": "Convertible leather belt bag in rich burgundy.",
+      "price": 108,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/burgundy-belt-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Travel, Tour, Weekend, Work, Casual",
+        "style": "Polished, Versatile, Effortless",
+        "colors": "Burgundy",
+        "fit": "Adjustable strap",
+        "fabric": "Genuine leather, gold hardware",
+        "care_instructions": "Condition leather.",
+        "styling_tips": "Hands-free elegance for travel."
+      }
+    },
+    {
+      "sku": "acc-092",
+      "name": "Gold Chain Mini Bag",
+      "description": "Tiny black mini bag on a dramatic gold chain.",
+      "price": 78,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-chain-mini-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Date Night, Birthday, Cocktail Party, Dinner, Evening Event",
+        "style": "Glamorous, Statement, Bold",
+        "colors": "Black, Gold",
+        "fit": "One Size",
+        "fabric": "Faux leather, gold chain",
+        "care_instructions": "Wipe clean.",
+        "styling_tips": "The perfect going-out bag."
+      }
+    },
+    {
+      "sku": "acc-093",
+      "name": "Printed Canvas Tote Bag",
+      "description": "Cheerful printed canvas tote for beach days.",
+      "price": 45,
+      "brand": "Loft",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/printed-canvas-tote.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Weekend, Casual, Summer, Tour",
+        "style": "Relaxed, Bohemian, Effortless",
+        "colors": "Blue, White",
+        "fit": "One Size",
+        "fabric": "Cotton canvas",
+        "care_instructions": "Machine wash cold.",
+        "styling_tips": "Toss in beach essentials."
+      }
+    },
+    {
+      "sku": "acc-094",
+      "name": "Camel Leather Bucket Bag",
+      "description": "Soft leather bucket bag in warm camel.",
+      "price": 168,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/camel-bucket-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Work, Fall Outing, Weekend, Travel, Family Gathering",
+        "style": "Classic, Sophisticated, Polished",
+        "colors": "Camel",
+        "fit": "One Size",
+        "fabric": "Genuine leather, suede lining",
+        "care_instructions": "Condition quarterly.",
+        "styling_tips": "Gorgeous with autumnal palettes."
+      }
+    },
+    {
+      "sku": "acc-095",
+      "name": "Woven Crossbody Saddle Bag",
+      "description": "Hand-woven saddle bag with leather flap.",
+      "price": 58,
+      "brand": "Loft",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/woven-saddle-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Tour, Weekend, Casual, Travel, Brunch",
+        "style": "Bohemian, Relaxed, Versatile",
+        "colors": "Tan",
+        "fit": "One Size",
+        "fabric": "Woven straw, leather trim",
+        "care_instructions": "Keep dry.",
+        "styling_tips": "Perfect for hands-free sightseeing."
+      }
+    },
+    {
+      "sku": "acc-096",
+      "name": "Pearl-Clasp Satin Minaudière",
+      "description": "Hard-shell satin minaudière with pearl-encrusted clasp.",
+      "price": 128,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/pearl-clasp-minaudiere.jpg"
+      ],
+      "attributes": {
+        "occasion": "Evening Event, Destination Wedding, Anniversary, Cocktail Party, New Year",
+        "style": "Elegant, Glamorous, Statement",
+        "colors": "Champagne",
+        "fit": "One Size",
+        "fabric": "Satin, pearl clasp",
+        "care_instructions": "Handle with care.",
+        "styling_tips": "Pairs with gowns and cocktail dresses."
+      }
+    },
+    {
+      "sku": "acc-097",
+      "name": "Denim Tote Bag",
+      "description": "Casual denim tote with leather handles.",
+      "price": 42,
+      "brand": "Loft",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/denim-tote-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Casual, Weekend, Summer, Beach Vacation, Tour",
+        "style": "Relaxed, Effortless, Versatile",
+        "colors": "Denim Blue",
+        "fit": "One Size",
+        "fabric": "Cotton denim, leather handles",
+        "care_instructions": "Machine wash cold.",
+        "styling_tips": "Pairs with everything casual."
+      }
+    },
+    {
+      "sku": "acc-098",
+      "name": "Emerald Velvet Clutch",
+      "description": "Plush emerald velvet clutch with hidden chain strap.",
+      "price": 85,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/emerald-velvet-clutch.jpg"
+      ],
+      "attributes": {
+        "occasion": "Evening Event, Dinner, Birthday, Cocktail Party, Anniversary",
+        "style": "Bold, Elegant, Statement",
+        "colors": "Emerald",
+        "fit": "One Size",
+        "fabric": "Velvet, gold chain",
+        "care_instructions": "Brush with velvet brush.",
+        "styling_tips": "Stunning with black, gold, or burgundy outfits."
+      }
+    },
+    {
+      "sku": "acc-099",
+      "name": "Rope Handle Beach Tote",
+      "description": "Oversized canvas beach tote with nautical rope handles.",
+      "price": 48,
+      "brand": "Loft",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/rope-handle-beach-tote.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Cruise, Tropical Getaway, Pool Party, Summer",
+        "style": "Resort, Relaxed, Bohemian",
+        "colors": "Natural, Navy",
+        "fit": "One Size",
+        "fabric": "Cotton canvas, rope handles",
+        "care_instructions": "Machine wash cold.",
+        "styling_tips": "The ultimate beach companion."
+      }
+    },
+    {
+      "sku": "acc-100",
+      "name": "Ivory Leather Frame Bag",
+      "description": "Refined ivory leather frame bag with gold kiss-lock closure.",
+      "price": 188,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-frame-bag.jpg"
+      ],
+      "attributes": {
+        "occasion": "Luncheon, Wedding Guest, Destination Wedding, Spring, Special Event",
+        "style": "Elegant, Classic, Feminine",
+        "colors": "Ivory, Gold",
+        "fit": "One Size",
+        "fabric": "Genuine leather, gold hardware",
+        "care_instructions": "Protect from color transfer.",
+        "styling_tips": "Perfect for spring events and weddings."
+      }
+    },
+    {
+      "sku": "wed-001",
+      "name": "Ivory Lace A-Line Wedding Gown",
+      "description": "Exquisite ivory A-line gown with delicate lace overlay and beaded bodice. Perfect for spring and summer ceremonies.",
+      "price": 1295,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-lace-wedding-gown.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Garden Party, Spring",
+        "style": "Elegant, Romantic, Timeless",
+        "colors": "Ivory",
+        "fit": "Regular",
+        "fabric": "French lace, tulle, satin lining",
+        "care_instructions": "Professional dry clean only.",
+        "styling_tips": "Pair with a cathedral veil and pearl jewelry for a classic bridal look."
+      }
+    },
+    {
+      "sku": "wed-002",
+      "name": "Chiffon Beach Wedding Dress",
+      "description": "Lightweight chiffon gown with thin straps and effortless flow, designed for beachside ceremonies in warm climates.",
+      "price": 895,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/chiffon-beach-wedding-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Destination Wedding, Tropical Getaway, Summer",
+        "style": "Relaxed, Romantic, Resort",
+        "colors": "White",
+        "fit": "Relaxed",
+        "fabric": "Silk chiffon",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Go barefoot or wear gold sandals. Add a flower crown for boho charm."
+      }
+    },
+    {
+      "sku": "wed-003",
+      "name": "Tropical Floral Wedding Guest Maxi",
+      "description": "Vibrant tropical floral maxi dress with flutter sleeves for sun-drenched destination weddings.",
+      "price": 219,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/tropical-wedding-guest-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Tropical Getaway, Beach Vacation, Summer",
+        "style": "Bold, Feminine, Resort",
+        "colors": "Green, Pink, Yellow",
+        "fit": "Regular",
+        "fabric": "Viscose crepe",
+        "care_instructions": "Machine wash cold, hang dry.",
+        "styling_tips": "Style with strappy sandals and a straw clutch."
+      }
+    },
+    {
+      "sku": "wed-004",
+      "name": "Gold Strappy Bridal Sandals",
+      "description": "Gleaming gold metallic T-strap flat sandals, ideal for beach and garden weddings in warm weather.",
+      "price": 148,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-bridal-sandals.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Beach Vacation, Summer, Evening Event",
+        "style": "Elegant, Resort, Glamorous",
+        "colors": "Gold",
+        "fit": "Regular",
+        "fabric": "Metallic leather",
+        "care_instructions": "Wipe clean with soft cloth.",
+        "styling_tips": "Perfect with flowing gowns for outdoor ceremonies."
+      }
+    },
+    {
+      "sku": "wed-005",
+      "name": "Turquoise Beach Wedding Necklace",
+      "description": "Bold turquoise beaded statement necklace for tropical and beach wedding celebrations.",
+      "price": 68,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/turquoise-beach-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Destination Wedding, Tropical Getaway, Wedding Guest, Summer",
+        "style": "Bohemian, Statement, Resort",
+        "colors": "Turquoise, Gold",
+        "fit": "One Size",
+        "fabric": "Natural turquoise stones, gold findings",
+        "care_instructions": "Keep dry, store flat.",
+        "styling_tips": "Pairs beautifully with white or coral dresses."
+      }
+    },
+    {
+      "sku": "wed-006",
+      "name": "Ivory Wide-Brim Bridal Sun Hat",
+      "description": "Wide-brim woven straw hat with satin ribbon, essential sun protection for outdoor summer weddings.",
+      "price": 78,
+      "brand": "AnnTaylor",
+      "category": "Accessories",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-bridal-sun-hat.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Garden Party, Beach Vacation, Summer",
+        "style": "Classic, Resort, Elegant",
+        "colors": "Ivory",
+        "fit": "One Size",
+        "fabric": "Woven straw, satin ribbon",
+        "care_instructions": "Store flat, avoid moisture.",
+        "styling_tips": "Gorgeous for outdoor ceremonies and reception photos."
+      }
+    },
+    {
+      "sku": "wed-007",
+      "name": "Blush Pashmina Wedding Wrap",
+      "description": "Soft blush cashmere pashmina wrap for cool summer evenings at outdoor receptions.",
+      "price": 85,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/pastel-silk-wedding-wrap.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Wedding Guest, Destination Wedding, Evening Event, Spring",
+        "style": "Feminine, Romantic, Elegant",
+        "colors": "Blush Pink",
+        "fit": "One Size",
+        "fabric": "Cashmere blend",
+        "care_instructions": "Dry clean recommended.",
+        "styling_tips": "Drape over shoulders during evening receptions."
+      }
+    },
+    {
+      "sku": "wed-008",
+      "name": "Ivory Satin Bridal Clutch",
+      "description": "Pleated ivory satin clutch with pearl detail, a classic bridal accessory for any wedding style.",
+      "price": 118,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-bridal-clutch.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Evening Event, Cocktail Party, Special Event",
+        "style": "Elegant, Timeless, Feminine",
+        "colors": "Ivory",
+        "fit": "One Size",
+        "fabric": "Duchess satin, pearl accent",
+        "care_instructions": "Spot clean only.",
+        "styling_tips": "Carry on your wedding day or give as a bridesmaid gift."
+      }
+    },
+    {
+      "sku": "wed-009",
+      "name": "Crystal Chandelier Bridal Earrings",
+      "description": "Dramatic crystal chandelier drop earrings that catch the light beautifully in sunny settings.",
+      "price": 88,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/crystal-chandelier-earrings.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Evening Event, Cocktail Party, Anniversary",
+        "style": "Glamorous, Statement, Elegant",
+        "colors": "Silver, Crystal",
+        "fit": "One Size",
+        "fabric": "Crystal, rhodium-plated silver",
+        "care_instructions": "Store in soft pouch.",
+        "styling_tips": "Ideal for updos and strapless gowns."
+      }
+    },
+    {
+      "sku": "wed-010",
+      "name": "Gold Floral Bridal Hair Comb",
+      "description": "Delicate gold floral hair comb with crystal buds and pearl accents for sunny wedding styling.",
+      "price": 65,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-bridal-hair-comb.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Garden Party, Spring, Special Event",
+        "style": "Romantic, Feminine, Vintage",
+        "colors": "Gold, Pearl",
+        "fit": "One Size",
+        "fabric": "Gold-plated metal, crystal, freshwater pearl",
+        "care_instructions": "Handle gently, store in box.",
+        "styling_tips": "Tuck into a low bun or half-up style."
+      }
+    },
+    {
+      "sku": "wed-011",
+      "name": "Velvet Long-Sleeve Winter Wedding Gown",
+      "description": "Luxurious velvet gown with high neckline and flowing sleeves, designed for elegant winter ceremonies.",
+      "price": 1495,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/velvet-winter-wedding-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Evening Event, Fall Outing",
+        "style": "Elegant, Sophisticated, Timeless",
+        "colors": "Champagne",
+        "fit": "Regular",
+        "fabric": "Silk velvet",
+        "care_instructions": "Professional dry clean only.",
+        "styling_tips": "Layer with the cashmere bridal cape for outdoor winter photos."
+      }
+    },
+    {
+      "sku": "wed-012",
+      "name": "Burgundy Satin Winter Guest Dress",
+      "description": "Rich burgundy satin wrap dress with long sleeves, perfect for winter wedding celebrations.",
+      "price": 259,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/burgundy-winter-guest-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Evening Event, Dinner, Anniversary, Fall Outing",
+        "style": "Bold, Elegant, Sophisticated",
+        "colors": "Burgundy",
+        "fit": "Regular",
+        "fabric": "Duchess satin",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Pair with gold jewelry and velvet clutch."
+      }
+    },
+    {
+      "sku": "wed-013",
+      "name": "Champagne Sequin Winter Gown",
+      "description": "All-over champagne sequin gown with long sleeves for formal winter wedding events.",
+      "price": 389,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/champagne-sequin-gown.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Evening Event, New Year, Anniversary, Cocktail Party",
+        "style": "Glamorous, Statement, Elegant",
+        "colors": "Champagne, Gold",
+        "fit": "Regular",
+        "fabric": "Sequin mesh over satin lining",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Let the dress be the star—keep accessories minimal."
+      }
+    },
+    {
+      "sku": "wed-014",
+      "name": "Ivory Faux Fur Bridal Wrap",
+      "description": "Sumptuous faux fur bridal wrap for warmth and glamour at winter weddings.",
+      "price": 165,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-faux-fur-wrap.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Evening Event, Fall Outing, Special Event",
+        "style": "Elegant, Cozy, Glamorous",
+        "colors": "Ivory",
+        "fit": "One Size",
+        "fabric": "Faux fur, satin lining",
+        "care_instructions": "Shake gently, spot clean only.",
+        "styling_tips": "Drape over shoulders for ceremony and photos."
+      }
+    },
+    {
+      "sku": "wed-015",
+      "name": "Cream Cashmere Bridal Cape",
+      "description": "Luxurious cashmere bridal cape with pearl buttons, perfect cover-up for cold-weather ceremonies.",
+      "price": 298,
+      "brand": "AnnTaylor",
+      "category": "Jackets",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/cashmere-bridal-cape.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Fall Outing, Evening Event, Special Event",
+        "style": "Elegant, Cozy, Timeless",
+        "colors": "Cream",
+        "fit": "One Size",
+        "fabric": "100% cashmere, pearl buttons",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Wear over your gown for outdoor winter portraits."
+      }
+    },
+    {
+      "sku": "wed-016",
+      "name": "Ivory Satin Crystal Bridal Shoes",
+      "description": "Ivory satin closed-toe shoes with crystal bow accent, comfortable and warm for indoor winter ceremonies.",
+      "price": 178,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-bridal-heels.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Evening Event, Special Event",
+        "style": "Elegant, Timeless, Classic",
+        "colors": "Ivory",
+        "fit": "Regular",
+        "fabric": "Duchess satin, crystal embellishment",
+        "care_instructions": "Wipe with damp cloth.",
+        "styling_tips": "Classic choice for formal winter weddings."
+      }
+    },
+    {
+      "sku": "wed-017",
+      "name": "Bridal Crystal & Pearl Tiara",
+      "description": "Handcrafted crystal and pearl tiara with delicate floral motifs for the ultimate bridal statement.",
+      "price": 128,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/bridal-crystal-tiara.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Special Event, Evening Event",
+        "style": "Glamorous, Romantic, Timeless",
+        "colors": "Gold, Pearl, Crystal",
+        "fit": "One Size",
+        "fabric": "Gold-plated wire, Swarovski crystal, freshwater pearl",
+        "care_instructions": "Store in padded box.",
+        "styling_tips": "Stunning with loose curls or a classic updo."
+      }
+    },
+    {
+      "sku": "wed-018",
+      "name": "Pearl & Diamond Bridal Jewelry Set",
+      "description": "Heirloom-quality pearl and crystal necklace with matching drop earrings for the bride.",
+      "price": 245,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/bridal-pearl-jewelry-set.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Anniversary, Evening Event, Special Event",
+        "style": "Elegant, Timeless, Classic",
+        "colors": "Gold, Pearl",
+        "fit": "One Size",
+        "fabric": "Freshwater pearl, crystal, gold-plated setting",
+        "care_instructions": "Store individually in soft pouch.",
+        "styling_tips": "Pairs with any neckline—a true bridal essential."
+      }
+    },
+    {
+      "sku": "wed-019",
+      "name": "Rose Gold Crystal Bridal Bracelet",
+      "description": "Delicate rose gold bracelet with sparkling crystal stations, perfect for both warm and cold wedding settings.",
+      "price": 98,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/rose-gold-bridal-bracelet.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Anniversary, Evening Event, Cocktail Party",
+        "style": "Romantic, Feminine, Elegant",
+        "colors": "Rose Gold, Crystal",
+        "fit": "One Size",
+        "fabric": "Rose gold-plated sterling silver, crystal",
+        "care_instructions": "Avoid water and perfume.",
+        "styling_tips": "Stack with a simple bangle or wear alone."
+      }
+    },
+    {
+      "sku": "wed-020",
+      "name": "Lace Cathedral Wedding Veil",
+      "description": "Floor-length cathedral veil with hand-embroidered lace border, a dramatic bridal finishing touch.",
+      "price": 195,
+      "brand": "AnnTaylor",
+      "category": "Accessories",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/lace-cathedral-veil.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Special Event",
+        "style": "Romantic, Timeless, Elegant",
+        "colors": "Ivory",
+        "fit": "One Size",
+        "fabric": "Tulle, embroidered lace trim",
+        "care_instructions": "Professional preservation recommended.",
+        "styling_tips": "Secure with the crystal tiara or hair comb for a complete look."
+      }
+    },
+    {
+      "sku": "wed-021",
+      "name": "Organza Sweetheart Destination Gown",
+      "description": "Lightweight organza ball gown with sweetheart neckline and delicate floral embroidery, ideal for sunny outdoor ceremonies.",
+      "price": 1395,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/organza-sunny-wedding-gown.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Garden Party, Summer",
+        "style": "Romantic, Elegant, Resort",
+        "colors": "Ivory",
+        "fit": "Regular",
+        "fabric": "Silk organza, tulle lining",
+        "care_instructions": "Professional dry clean only.",
+        "styling_tips": "Add a simple pearl necklace and flower crown for a garden wedding."
+      }
+    },
+    {
+      "sku": "wed-022",
+      "name": "Coral Chiffon Bridesmaid Maxi",
+      "description": "Flowing coral chiffon one-shoulder bridesmaid dress that moves beautifully in ocean breezes.",
+      "price": 189,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/coral-bridesmaid-maxi.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Beach Vacation, Tropical Getaway, Summer",
+        "style": "Feminine, Romantic, Resort",
+        "colors": "Coral",
+        "fit": "Regular",
+        "fabric": "Silk chiffon",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Pair with gold sandals and a straw clutch for a beach ceremony."
+      }
+    },
+    {
+      "sku": "wed-023",
+      "name": "Sage Silk Cowl Neck Slip Dress",
+      "description": "Elegant sage green silk slip dress with cowl neckline, perfect for sunny garden and vineyard weddings.",
+      "price": 168,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/sage-silk-slip-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Garden Party, Brunch, Summer",
+        "style": "Effortless, Elegant, Feminine",
+        "colors": "Sage",
+        "fit": "Regular",
+        "fabric": "100% Silk charmeuse",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Layer with a sheer wrap for evening receptions."
+      }
+    },
+    {
+      "sku": "wed-024",
+      "name": "Gold Seashell Charm Anklet",
+      "description": "Delicate gold chain anklet with tiny seashell charms, the perfect beach wedding accessory.",
+      "price": 42,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-seashell-anklet.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Destination Wedding, Tropical Getaway, Cruise, Summer",
+        "style": "Bohemian, Resort, Feminine",
+        "colors": "Gold",
+        "fit": "Adjustable",
+        "fabric": "14K gold-filled chain, shell charms",
+        "care_instructions": "Rinse after saltwater exposure.",
+        "styling_tips": "Layer with barefoot sandals for beach ceremonies."
+      }
+    },
+    {
+      "sku": "wed-025",
+      "name": "Raffia & Lace Bridal Clutch",
+      "description": "Hand-woven raffia clutch with ivory lace overlay, blending tropical charm with bridal elegance.",
+      "price": 98,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/raffia-bridal-clutch.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Beach Vacation, Tropical Getaway, Summer",
+        "style": "Resort, Bohemian, Elegant",
+        "colors": "Natural, Ivory",
+        "fit": "One Size",
+        "fabric": "Natural raffia, cotton lace",
+        "care_instructions": "Keep dry, spot clean only.",
+        "styling_tips": "Perfect for beach and garden destination weddings."
+      }
+    },
+    {
+      "sku": "wed-026",
+      "name": "Ivory Embroidered Bridal Romper",
+      "description": "Charming ivory cotton romper with lace trim, ideal for casual beach wedding ceremonies or rehearsal dinners.",
+      "price": 148,
+      "brand": "Loft",
+      "category": "Jumpsuits",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-bridal-romper.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Beach Vacation, Brunch, Summer",
+        "style": "Relaxed, Feminine, Resort",
+        "colors": "Ivory",
+        "fit": "Relaxed",
+        "fabric": "Cotton voile, cotton lace",
+        "care_instructions": "Machine wash cold, hang dry.",
+        "styling_tips": "Add wedge sandals and a flower crown for bohemian bridal style."
+      }
+    },
+    {
+      "sku": "wed-027",
+      "name": "Pearl & Crystal Floral Headband",
+      "description": "Handcrafted pearl and crystal floral headband, a stunning alternative to a veil for outdoor sunny weddings.",
+      "price": 85,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/pearl-floral-headpiece.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Garden Party, Special Event",
+        "style": "Romantic, Feminine, Vintage",
+        "colors": "Gold, Pearl",
+        "fit": "One Size",
+        "fabric": "Gold-plated wire, freshwater pearl, crystal",
+        "care_instructions": "Store in padded box.",
+        "styling_tips": "Beautiful with loose waves or a low chignon."
+      }
+    },
+    {
+      "sku": "wed-028",
+      "name": "Ivory Satin Pearl Ballet Flats",
+      "description": "Soft ivory satin ballet flats with pearl bow, comfortable for all-day outdoor wedding celebrations.",
+      "price": 78,
+      "brand": "Loft",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-pearl-ballet-flats.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Beach Vacation, Garden Party, Summer",
+        "style": "Feminine, Elegant, Relaxed",
+        "colors": "Ivory",
+        "fit": "True to Size",
+        "fabric": "Satin upper, cushioned insole",
+        "care_instructions": "Spot clean only.",
+        "styling_tips": "Perfect for dancing at garden and beach receptions."
+      }
+    },
+    {
+      "sku": "wed-029",
+      "name": "Ivory Lace Bridal Parasol",
+      "description": "Sheer embroidered lace parasol providing elegant sun protection for outdoor ceremonies in hot climates.",
+      "price": 65,
+      "brand": "AnnTaylor",
+      "category": "Accessories",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/lace-bridal-parasol.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Garden Party, Summer",
+        "style": "Romantic, Vintage, Elegant",
+        "colors": "Ivory",
+        "fit": "One Size",
+        "fabric": "Cotton lace, wooden handle",
+        "care_instructions": "Store dry, handle gently.",
+        "styling_tips": "Gorgeous in wedding photos and protects from sun during outdoor ceremonies."
+      }
+    },
+    {
+      "sku": "wed-030",
+      "name": "Lavender Flutter Sleeve Guest Dress",
+      "description": "Lightweight lavender chiffon dress with flutter sleeves, a dreamy choice for summer destination wedding guests.",
+      "price": 139,
+      "brand": "Loft",
+      "category": "Dresses",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/lavender-guest-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Garden Party, Brunch, Summer",
+        "style": "Feminine, Romantic, Relaxed",
+        "colors": "Lavender",
+        "fit": "Regular",
+        "fabric": "Polyester chiffon",
+        "care_instructions": "Machine wash cold, hang dry.",
+        "styling_tips": "Pair with nude sandals and dainty gold jewelry."
+      }
+    },
+    {
+      "sku": "wed-031",
+      "name": "Gold Pearl Drop Bridal Earrings",
+      "description": "Classic gold filigree earrings with lustrous pearl drops, catching sunlight beautifully at outdoor weddings.",
+      "price": 72,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-pearl-drop-earrings.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Evening Event, Anniversary, Special Event",
+        "style": "Elegant, Timeless, Feminine",
+        "colors": "Gold, Pearl",
+        "fit": "One Size",
+        "fabric": "Gold-plated brass, freshwater pearl",
+        "care_instructions": "Store in soft pouch, avoid perfume.",
+        "styling_tips": "Pairs with any neckline—a bridal essential for sunny ceremonies."
+      }
+    },
+    {
+      "sku": "wed-032",
+      "name": "Tropical Silk Sarong Wrap",
+      "description": "Vibrant tropical print silk sarong that works as a wrap, cover-up, or beach wedding accessory.",
+      "price": 55,
+      "brand": "Loft",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/tropical-silk-sarong.jpg"
+      ],
+      "attributes": {
+        "occasion": "Beach Vacation, Destination Wedding, Tropical Getaway, Cruise, Pool Party",
+        "style": "Resort, Bold, Bohemian",
+        "colors": "Turquoise, Coral",
+        "fit": "One Size",
+        "fabric": "100% Silk",
+        "care_instructions": "Hand wash cold, air dry.",
+        "styling_tips": "Tie as a skirt over swimwear or drape over shoulders at receptions."
+      }
+    },
+    {
+      "sku": "wed-033",
+      "name": "Mother of Pearl Evening Clutch",
+      "description": "Exquisite beaded mother-of-pearl hardshell clutch, a show-stopping bridal accessory for destination weddings.",
+      "price": 128,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/mother-of-pearl-clutch.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Evening Event, Cocktail Party, Anniversary",
+        "style": "Elegant, Glamorous, Statement",
+        "colors": "Ivory, Pearl",
+        "fit": "One Size",
+        "fabric": "Mother of pearl beading, satin lining",
+        "care_instructions": "Handle with care, store in dust bag.",
+        "styling_tips": "Stunning with any bridal gown or evening dress."
+      }
+    },
+    {
+      "sku": "wed-034",
+      "name": "Peach Embroidered Linen Co-Ord",
+      "description": "Breezy peach linen co-ord set with embroidered details, perfect for sunny wedding rehearsal dinners or brunches.",
+      "price": 159,
+      "brand": "Loft",
+      "category": "Tops",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/peach-linen-coord-set.jpg"
+      ],
+      "attributes": {
+        "occasion": "Destination Wedding, Beach Vacation, Brunch, Tropical Getaway, Summer",
+        "style": "Resort, Relaxed, Feminine",
+        "colors": "Peach",
+        "fit": "Relaxed",
+        "fabric": "100% Linen with cotton embroidery",
+        "care_instructions": "Machine wash cold, lay flat to dry.",
+        "styling_tips": "Wear with wedge espadrilles and gold hoop earrings."
+      }
+    },
+    {
+      "sku": "wed-035",
+      "name": "Emerald Velvet Winter Formal Gown",
+      "description": "Regal emerald velvet gown with high neckline and bell sleeves, designed for formal winter wedding celebrations.",
+      "price": 398,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/emerald-velvet-winter-gown.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Evening Event, Fall Outing, Anniversary",
+        "style": "Sophisticated, Bold, Elegant",
+        "colors": "Emerald",
+        "fit": "Regular",
+        "fabric": "Silk velvet",
+        "care_instructions": "Professional dry clean only.",
+        "styling_tips": "Pair with gold statement jewelry and a velvet clutch."
+      }
+    },
+    {
+      "sku": "wed-036",
+      "name": "Ivory Long-Sleeve Lace Bridal Gown",
+      "description": "Stunning long-sleeve gown with illusion lace bodice and satin trumpet skirt, ideal for elegant winter ceremonies.",
+      "price": 1595,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-longsleeve-lace-gown.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Fall Outing, Special Event",
+        "style": "Timeless, Romantic, Elegant",
+        "colors": "Ivory",
+        "fit": "Regular",
+        "fabric": "French lace, duchess satin",
+        "care_instructions": "Professional dry clean and preserve.",
+        "styling_tips": "Layer with the cashmere cape for outdoor winter photos."
+      }
+    },
+    {
+      "sku": "wed-037",
+      "name": "Navy Velvet Long-Sleeve Bridesmaid Gown",
+      "description": "Floor-length navy velvet bridesmaid dress with long sleeves, offering warmth and elegance for winter weddings.",
+      "price": 228,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/navy-velvet-bridesmaid.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Evening Event, Fall Outing",
+        "style": "Sophisticated, Classic, Elegant",
+        "colors": "Navy",
+        "fit": "Regular",
+        "fabric": "Stretch velvet",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Add crystal earrings and a metallic clutch."
+      }
+    },
+    {
+      "sku": "wed-038",
+      "name": "Burgundy Velvet Block Heel Pumps",
+      "description": "Rich burgundy velvet closed-toe pumps with sculpted block heel, warm and stylish for winter wedding venues.",
+      "price": 148,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/burgundy-velvet-heels.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Evening Event, Dinner, Fall Outing",
+        "style": "Sophisticated, Bold, Elegant",
+        "colors": "Burgundy",
+        "fit": "True to Size",
+        "fabric": "Velvet upper, leather sole",
+        "care_instructions": "Brush with velvet brush, avoid moisture.",
+        "styling_tips": "Pairs beautifully with navy, emerald, and black gowns."
+      }
+    },
+    {
+      "sku": "wed-039",
+      "name": "Ivory Wool Bridal Shawl",
+      "description": "Luxuriously soft ivory merino wool shawl with pearl pin closure, essential warmth for cold-weather ceremonies.",
+      "price": 145,
+      "brand": "AnnTaylor",
+      "category": "Scarves",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/ivory-wool-bridal-shawl.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Fall Outing, Evening Event, Special Event",
+        "style": "Elegant, Cozy, Timeless",
+        "colors": "Ivory",
+        "fit": "One Size",
+        "fabric": "100% Merino wool, pearl brooch",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Drape over shoulders during ceremony and outdoor photos."
+      }
+    },
+    {
+      "sku": "wed-040",
+      "name": "Crystal Snowflake Bridal Hair Pins",
+      "description": "Set of three crystal snowflake hair pins, a magical accent for winter bridal hairstyles.",
+      "price": 58,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/crystal-snowflake-hairpins.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Evening Event, Special Event",
+        "style": "Glamorous, Romantic, Statement",
+        "colors": "Silver, Crystal",
+        "fit": "One Size",
+        "fabric": "Silver-plated metal, Swarovski crystal",
+        "care_instructions": "Store in padded box.",
+        "styling_tips": "Scatter through an updo for a winter wonderland effect."
+      }
+    },
+    {
+      "sku": "wed-041",
+      "name": "Plum Satin Long-Sleeve Wrap Dress",
+      "description": "Luxurious plum satin wrap dress with dramatic sleeves, a rich and romantic choice for cold-weather wedding guests.",
+      "price": 219,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/plum-satin-wrap-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Evening Event, Dinner, Anniversary",
+        "style": "Sophisticated, Feminine, Elegant",
+        "colors": "Plum",
+        "fit": "Regular",
+        "fabric": "Duchess satin",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Accessorize with gold jewelry and a velvet clutch."
+      }
+    },
+    {
+      "sku": "wed-042",
+      "name": "Gold & Ruby Statement Bib Necklace",
+      "description": "Dramatic gold bib necklace set with ruby-red crystals, a show-stopping accessory for formal winter weddings.",
+      "price": 118,
+      "brand": "AnnTaylor",
+      "category": "Jewelry",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-ruby-bib-necklace.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Evening Event, Cocktail Party, Anniversary",
+        "style": "Statement, Glamorous, Bold",
+        "colors": "Gold, Ruby",
+        "fit": "One Size",
+        "fabric": "Gold-plated brass, crystal",
+        "care_instructions": "Store flat in pouch.",
+        "styling_tips": "Pairs with simple necklines—let the necklace be the star."
+      }
+    },
+    {
+      "sku": "wed-043",
+      "name": "Black Velvet Crystal Clutch",
+      "description": "Opulent black velvet clutch with crystal snowflake brooch, a luxurious companion for winter wedding evenings.",
+      "price": 108,
+      "brand": "AnnTaylor",
+      "category": "Handbags",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/black-velvet-crystal-clutch.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Evening Event, Cocktail Party, New Year",
+        "style": "Glamorous, Elegant, Statement",
+        "colors": "Black",
+        "fit": "One Size",
+        "fabric": "Velvet, crystal embellishment, satin lining",
+        "care_instructions": "Brush with velvet brush.",
+        "styling_tips": "Stunning with any formal winter outfit."
+      }
+    },
+    {
+      "sku": "wed-044",
+      "name": "Crystal & Pearl Bridal Sash Belt",
+      "description": "Dazzling crystal and pearl sash belt to cinch your wedding gown, adding sparkle to winter ceremony styling.",
+      "price": 135,
+      "brand": "AnnTaylor",
+      "category": "Belts",
+      "sizes": [
+        "One Size"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/crystal-bridal-sash.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Special Event",
+        "style": "Elegant, Romantic, Timeless",
+        "colors": "Silver, Crystal",
+        "fit": "Adjustable",
+        "fabric": "Crystal, pearl, satin ribbon",
+        "care_instructions": "Handle gently, store flat.",
+        "styling_tips": "Tie over your gown at the natural waist for a defined silhouette."
+      }
+    },
+    {
+      "sku": "wed-045",
+      "name": "Gold Sequin Long-Sleeve Cocktail Dress",
+      "description": "Dazzling gold sequin cocktail dress with long sleeves, perfect for winter wedding receptions and after-parties.",
+      "price": 278,
+      "brand": "AnnTaylor",
+      "category": "Dresses",
+      "sizes": [
+        "0",
+        "2",
+        "4",
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/gold-sequin-cocktail-dress.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding Guest, Destination Wedding, Evening Event, New Year, Cocktail Party",
+        "style": "Glamorous, Statement, Bold",
+        "colors": "Gold",
+        "fit": "Regular",
+        "fabric": "Sequin mesh over satin lining",
+        "care_instructions": "Dry clean only.",
+        "styling_tips": "Keep accessories minimal—the dress does all the talking."
+      }
+    },
+    {
+      "sku": "wed-046",
+      "name": "Champagne Satin Crystal-Buckle Heels",
+      "description": "Champagne satin pointed-toe heels with crystal buckle accent, a refined choice for formal winter ceremonies.",
+      "price": 168,
+      "brand": "AnnTaylor",
+      "category": "Shoes",
+      "sizes": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "inventory_status": "in_stock",
+      "images": [
+        "../assets/products/champagne-crystal-heels.jpg"
+      ],
+      "attributes": {
+        "occasion": "Wedding, Destination Wedding, Evening Event, Cocktail Party, Special Event",
+        "style": "Elegant, Timeless, Glamorous",
+        "colors": "Champagne",
+        "fit": "True to Size",
+        "fabric": "Satin upper, crystal embellishment, leather sole",
+        "care_instructions": "Spot clean, store in dust bag.",
+        "styling_tips": "Universally flattering with any wedding palette."
+      }
+    }
+  ]
+}

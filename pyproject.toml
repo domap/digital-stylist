@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "digital-stylist"
+version = "0.1.0"
+description = "Multi-agent Digital Stylist orchestration with LangGraph and ChromaDB"
+requires-python = ">=3.11"
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain-core>=0.3.0",
+    "langchain-google-genai>=2.0.0",
+    "langchain-openai>=0.2.0",
+    "langchain-chroma>=0.1.0",
+    "langchain-mcp-adapters>=0.1.0",
+    "chromadb>=0.5.0",
+    "mcp>=1.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "psycopg[binary]>=3.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.6.0",
+    "black>=24.0.0",
+]
+
+[project.scripts]
+digital-stylist = "digital_stylist.cli:main"
+digital-stylist-mcp-service = "digital_stylist.mcp_servers.main:main"
+digital-stylist-worker = "digital_stylist.worker_app:run"
+digital-stylist-catalog-feed = "digital_stylist.catalog_feed_cli:main"
+digital-stylist-pg-bootstrap = "digital_stylist.infra.postgres.bootstrap:main"
+digital-stylist-seed-retail = "digital_stylist.infra.postgres.seed_retail_calendar:main"
+digital-stylist-seed-workforce = "digital_stylist.infra.postgres.seed_workforce:main"
+digital-stylist-seed-customers = "digital_stylist.infra.postgres.seed_customers:main"
+digital-stylist-seed-sample-stylists = "digital_stylist.infra.postgres.seed_sample_stylists:main"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]

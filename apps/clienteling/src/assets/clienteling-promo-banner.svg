@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="360" viewBox="0 0 1024 360" role="img" aria-labelledby="t d">
+  <title id="t">Ann Taylor  in-store clienteling</title>
+  <desc id="d">Promotional band for valued clients: styling sessions and associate offers.</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1729"/>
+      <stop offset="55%" style="stop-color:#1a2b4a"/>
+      <stop offset="100%" style="stop-color:#0c1828"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9a227;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#d4af37;stop-opacity:0.35"/>
+      <stop offset="100%" style="stop-color:#c9a227;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="360" fill="url(#g)"/>
+  <rect y="120" width="1024" height="2" fill="url(#accent)"/>
+  <text x="64" y="140" fill="#e8ecf4" font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="600">Style for every story</text>
+  <text x="64" y="200" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18">In-store clienteling · Associate styling · Valued client offers</text>
+  <text x="64" y="248" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14">Book sessions and share looks your clients will love.</text>
+</svg>

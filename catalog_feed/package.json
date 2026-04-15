@@ -1,0 +1,11 @@
+{
+  "name": "catalog-feed-data",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export-products": "esbuild catalog_feed/scripts/export_products_json.ts --bundle --platform=node --format=esm --outfile=catalog_feed/dist/export_products_json.mjs --loader:.jpg=file --packages=external && node catalog_feed/dist/export_products_json.mjs catalog_feed/fixtures/products.json"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5"
+  }
+}

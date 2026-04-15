@@ -1,0 +1,12 @@
+.env
+.venv/
+
+# Cursor editor (local AI rules, state — do not commit)
+.cursor/
+.cursorrules
+__pycache__/
+*.pyc
+chroma_data/
+.DS_Store
+node_modules/
+apps/*/dist/

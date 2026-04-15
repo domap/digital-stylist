@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --connect-bg: #faf9f7;
+  --connect-ink: #1a1a1a;
+  --connect-accent: #6b2c3e;
+}
+
+body {
+  margin: 0;
+  background: var(--connect-bg);
+  color: var(--connect-ink);
+  font-family: system-ui, "Segoe UI", sans-serif;
+}
+
+.connect-prose h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0 0.35rem;
+}
+.connect-prose p {
+  margin: 0.35rem 0;
+  line-height: 1.55;
+}
