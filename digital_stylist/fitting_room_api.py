@@ -25,6 +25,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from digital_stylist.config import StylistSettings
 from digital_stylist.infra.postgres.connection import postgres_connect_kwargs, uses_postgres_backend
+from digital_stylist.stylist.repository import sum_stylist_catalog_prices_for_product_ids
 
 logger = logging.getLogger(__name__)
 
@@ -44,7 +45,10 @@ def _require_pg(settings: StylistSettings) -> None:
 
 
 def _tenant_id(settings: StylistSettings) -> str:
-    return (settings.pg_tenant_id or "default").strip() or "default"
+    t = (settings.pg_tenant_id or "").strip()
+    if not t:
+        raise HTTPException(status_code=503, detail="STYLIST_PG_TENANT_ID must be set to a non-empty value")
+    return t
 
 
 def _session_set_tenant(cur: Any, tenant: str) -> None:
@@ -55,21 +59,12 @@ def _session_set_internal_api(cur: Any) -> None:
     cur.execute("SELECT set_config('app.internal_api', 'true', true)")
 
 
-def _catalog_total_cost(product_ids: list[str]) -> float:
-    from digital_stylist.retail_api import get_catalog_products_cached
-
-    ids = {str(x).strip() for x in product_ids if str(x).strip()}
-    if not ids:
-        return 0.0
-    total = 0.0
-    for p in get_catalog_products_cached():
-        pid = str(p.get("id") or "")
-        if pid in ids:
-            try:
-                total += float(p.get("price") or 0)
-            except (TypeError, ValueError):
-                continue
-    return round(total, 2)
+def _stylist_catalog_total_cost(settings: StylistSettings, tenant: str, product_ids: list[str]) -> float:
+    try:
+        return sum_stylist_catalog_prices_for_product_ids(settings, tenant, product_ids)
+    except psycopg.Error as e:
+        logger.exception("fitting_room_catalog_price_sum_failed")
+        raise HTTPException(status_code=503, detail="Database error") from e
 
 
 def _row_to_event(row: tuple[Any, ...], cols: list[str]) -> dict[str, Any]:
@@ -298,7 +293,7 @@ def attach_fitting_room_routes(router: APIRouter) -> None:
                 norm_chans.append(s)
         if not norm_chans:
             norm_chans = ["email"]
-        total = _catalog_total_cost(body.product_ids)
+        total = _stylist_catalog_total_cost(settings, tenant, body.product_ids)
         rid = str(uuid.uuid4())
         kw = postgres_connect_kwargs(settings)
         try:

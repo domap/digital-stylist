@@ -7,6 +7,7 @@
 - ``current_intent``, ``urgency``, ``next_node``: intent domain (``next_node`` consumed by ``route_from_intent``)
 - ``stylist_notes``: stylist domain
 - ``recommendations``, ``catalog_matches``, ``catalog_rag_trace``: catalog domain
+- ``recommendation_rationale``: explainability domain (customer-facing why these SKUs)
 - ``booking_id``, ``appointment_copy``: appointment domain
 - ``email_draft``, ``mcp_email_queue_id``: email domain
 - ``context_metadata``: CLI / HTTP worker seeding; read by domains as session context
@@ -36,10 +37,11 @@ class StylistState(TypedDict, total=False):
     email_draft: NotRequired[str]
     appointment_copy: NotRequired[str]
     catalog_rag_trace: NotRequired[str]
+    recommendation_rationale: NotRequired[str]
     mcp_customer_snapshot: NotRequired[dict[str, Any]]
     mcp_email_queue_id: NotRequired[str]
 
 
 IntentLiteral = Literal["PURCHASE", "INQUIRY", "APPOINTMENT", "SUPPORT"]
 
-NextNodeLiteral = Literal["stylist", "appointment", "support", "respond"]
+NextNodeLiteral = Literal["stylist", "appointment", "support", "respond", "email"]

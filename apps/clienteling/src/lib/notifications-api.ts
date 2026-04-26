@@ -1,4 +1,5 @@
 import type { NotificationEvent } from "@/lib/stylist-api";
+import { mergeObservabilityHeaders } from "@/lib/observability";
 
 /** Load fitting-room (and future) notification events from the worker (Postgres-backed). */
 export async function fetchNotifications(params: {
@@ -9,7 +10,7 @@ export async function fetchNotifications(params: {
   if (params.limit != null) qs.set("limit", String(params.limit));
   const q = qs.toString();
   const url = q ? `/api/v1/notifications?${q}` : "/api/v1/notifications";
-  const res = await fetch(url);
+  const res = await fetch(url, mergeObservabilityHeaders());
   if (!res.ok) {
     const t = await res.text();
     throw new Error(t || "Failed to load notifications");

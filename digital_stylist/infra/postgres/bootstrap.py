@@ -345,6 +345,14 @@ def main(argv: list[str] | None = None) -> int:
         logger.exception("schema_apply_failed")
         return 1
 
+    try:
+        from digital_stylist.infra.postgres.seed_stylist_data import seed_stylist_data
+
+        seed_stylist_data(settings)
+    except Exception:
+        logger.exception("stylist_seed_failed")
+        return 1
+
     logger.info("schema_apply_ok")
     return 0
 

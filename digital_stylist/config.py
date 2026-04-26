@@ -28,9 +28,9 @@ class StylistSettings(BaseSettings):
 
     Optional per-agent chat overrides (each falls back to ``STYLIST_CHAT_MODEL`` / provider default):
 
-    - ``STYLIST_AGENT_MODEL_CUSTOMER``, ``STYLIST_AGENT_MODEL_INTENT``, ``STYLIST_AGENT_MODEL_STYLIST``,
-      ``STYLIST_AGENT_MODEL_CATALOG``, ``STYLIST_AGENT_MODEL_APPOINTMENT``, ``STYLIST_AGENT_MODEL_EMAIL``,
-      ``STYLIST_AGENT_MODEL_SUPPORT``
+    -       ``STYLIST_AGENT_MODEL_CUSTOMER``, ``STYLIST_AGENT_MODEL_INTENT``, ``STYLIST_AGENT_MODEL_STYLIST``,
+      ``STYLIST_AGENT_MODEL_CATALOG``, ``STYLIST_AGENT_MODEL_EXPLAINABILITY``, ``STYLIST_AGENT_MODEL_APPOINTMENT``,
+      ``STYLIST_AGENT_MODEL_EMAIL``, ``STYLIST_AGENT_MODEL_SUPPORT``
 
     MCP (tools for agents):
 
@@ -46,6 +46,11 @@ class StylistSettings(BaseSettings):
     - ``STYLIST_MAX_MESSAGE_CHARS``, ``STYLIST_INVOKE_TIMEOUT_SEC`` — request limits
     - ``STYLIST_BEHIND_PROXY`` — trust ``X-Forwarded-*`` when behind a reverse proxy
     - ``STYLIST_OPENAPI_DOCS`` — force enable/disable ``/docs`` (default: off in production unless debug)
+
+    Observability (``digital_stylist`` loggers; JSON lines for aggregators):
+
+    - ``STYLIST_LOG_FORMAT`` — ``text`` (default) or ``json``
+    - ``STYLIST_LOG_LEVEL`` — ``INFO`` (default), ``DEBUG``, etc.
 
     PostgreSQL (MCP customer / appointment / associate data; zero-trust defaults):
 
@@ -105,6 +110,9 @@ class StylistSettings(BaseSettings):
     )
     agent_model_catalog: str | None = Field(
         default=None, validation_alias="STYLIST_AGENT_MODEL_CATALOG"
+    )
+    agent_model_explainability: str | None = Field(
+        default=None, validation_alias="STYLIST_AGENT_MODEL_EXPLAINABILITY"
     )
     agent_model_appointment: str | None = Field(
         default=None, validation_alias="STYLIST_AGENT_MODEL_APPOINTMENT"
@@ -168,6 +176,12 @@ class StylistSettings(BaseSettings):
         default=10, ge=1, le=120, validation_alias="STYLIST_PG_CONNECT_TIMEOUT"
     )
 
+    catalog_media_dir: str | None = Field(
+        default=None,
+        validation_alias="STYLIST_CATALOG_MEDIA_DIR",
+        description="Directory of catalog image files for GET /catalog/media/{filename}; unset disables static media",
+    )
+
     catalog_rag_max_rounds: int = Field(
         default=3, validation_alias="STYLIST_CATALOG_RAG_MAX_ROUNDS"
     )
@@ -205,6 +219,17 @@ class StylistSettings(BaseSettings):
         description="Override OpenAPI /docs (default: off in production unless debug)",
     )
 
+    log_format: Literal["text", "json"] = Field(
+        default="text",
+        validation_alias="STYLIST_LOG_FORMAT",
+        description="text: terminal-friendly; json: one JSON object per line",
+    )
+    log_level: str = Field(
+        default="INFO",
+        validation_alias="STYLIST_LOG_LEVEL",
+        description="Logging level for the digital_stylist package loggers",
+    )
+
     @field_validator("llm_provider", mode="before")
     @classmethod
     def _normalize_llm_provider(cls, v: object) -> str:
@@ -219,6 +244,16 @@ class StylistSettings(BaseSettings):
             return "openai"
         raise ValueError("STYLIST_LLM_PROVIDER must resolve to google_genai or openai")
 
+    @field_validator("log_level", mode="before")
+    @classmethod
+    def _normalize_log_level(cls, v: object) -> str:
+        if v is None:
+            return "INFO"
+        if isinstance(v, str):
+            s = v.strip().upper()
+            return s if s else "INFO"
+        return str(v).strip().upper() or "INFO"
+
     @field_validator(
         "chat_model",
         "embedding_model",
@@ -226,6 +261,7 @@ class StylistSettings(BaseSettings):
         "agent_model_intent",
         "agent_model_stylist",
         "agent_model_catalog",
+        "agent_model_explainability",
         "agent_model_appointment",
         "agent_model_email",
         "agent_model_support",
@@ -237,6 +273,7 @@ class StylistSettings(BaseSettings):
         "pg_sslcert",
         "pg_sslkey",
         "pg_tenant_id",
+        "catalog_media_dir",
         mode="before",
     )
     @classmethod

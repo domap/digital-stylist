@@ -9,6 +9,7 @@ from digital_stylist.domains.appointment import AppointmentAgent
 from digital_stylist.domains.catalog import CatalogAgent
 from digital_stylist.domains.customer import CustomerAgent
 from digital_stylist.domains.email import EmailAgent
+from digital_stylist.domains.explainability import ExplainabilityAgent
 from digital_stylist.domains.intent import IntentAgent
 from digital_stylist.domains.stylist import StylistAgent
 from digital_stylist.domains.support import SupportAgent
@@ -20,6 +21,7 @@ class StylistAgentBundle:
     intent: IntentAgent
     stylist: StylistAgent
     catalog: CatalogAgent
+    explainability: ExplainabilityAgent
     appointment: AppointmentAgent
     email: EmailAgent
     support: SupportAgent
@@ -31,6 +33,7 @@ class StylistAgentBundle:
             intent=IntentAgent(ctx),
             stylist=StylistAgent(ctx),
             catalog=CatalogAgent(ctx),
+            explainability=ExplainabilityAgent(ctx),
             appointment=AppointmentAgent(ctx),
             email=EmailAgent(ctx),
             support=SupportAgent(ctx),

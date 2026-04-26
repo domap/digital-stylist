@@ -12,9 +12,9 @@ logger = logging.getLogger(__name__)
 
 def route_from_intent(
     state: StylistState,
-) -> Literal["stylist", "appointment", "support"]:
+) -> Literal["stylist", "appointment", "support", "email"]:
     n = state.get("next_node", "support")
-    if n in ("stylist", "appointment", "support"):
+    if n in ("stylist", "appointment", "support", "email"):
         return n
     logger.warning(
         "intent_route_invalid_next_node",

@@ -25,7 +25,6 @@ class EmailAgent(FiveBlockAgent):
             "intent": state.get("current_intent", "INQUIRY"),
             "stylist_notes": state.get("stylist_notes"),
             "catalog_matches": state.get("catalog_matches") or state.get("recommendations"),
-            "booking_id": state.get("booking_id"),
             "user_profile": state.get("user_profile"),
         }
 
@@ -72,19 +71,12 @@ class EmailAgent(FiveBlockAgent):
             for m in matches[:5]
         )
         qnote = f"\n\n_(MCP email queue id: {queue_id})_" if queue_id else ""
-        if state.get("booking_id"):
-            appt = state.get("appointment_copy") or ""
-            bid = state.get("booking_id", "")
-            user_visible = (
-                f"Your consultation is noted. Booking reference: **{bid}**.\n\n"
-                f"{appt}\n\n---\nEmail draft (queued):\n\n{draft[:2500]}" + qnote
-            )
-        else:
-            user_visible = (
-                f"### Your look\n\n{state.get('stylist_notes', '')}\n\n"
-                f"### Verified catalog matches\n{sku_lines or '_(No matching in-stock SKU in vector index — seed or widen search.)_'}\n\n"
-                f"### Lookbook email (queued)\n{draft[:2000]}" + qnote
-            )
+        extra = (
+            f"### Items referenced\n{sku_lines}\n\n" if (sku_lines or "").strip() else ""
+        )
+        user_visible = (
+            f"{extra}### Lookbook email (queued)\n\n{draft[:2500]}" + qnote
+        )
         out: dict[str, Any] = {"email_draft": full, "messages": [AIMessage(content=user_visible)]}
         if queue_id:
             out["mcp_email_queue_id"] = queue_id

@@ -18,6 +18,7 @@ INTENT_AGENT = """You are the Intent Agent for a Digital Stylist platform. Your 
 Routing rules for `next_node`:
 - `stylist` — shopping, outfit ideas, product questions (PURCHASE / INQUIRY styling flows)
 - `appointment` — fitting, consultation, live chat scheduling
+- `email` — user explicitly asks to receive a lookbook, email, or written summary by email (not general shopping chat)
 - `support` — account, order status, policies, generic help
 
 Use only these exact intent strings."""

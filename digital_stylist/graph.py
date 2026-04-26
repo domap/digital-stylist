@@ -1,4 +1,4 @@
-"""LangGraph orchestration: Customer → Intent → (Stylist|Appointment|Support) → Catalog/Email."""
+"""LangGraph orchestration: Customer → Intent → branches (stylist path, appointment, email, support)."""
 
 from __future__ import annotations
 
@@ -45,6 +45,7 @@ def build_graph(
     g.add_node("intent", bundle.intent.run)
     g.add_node("stylist", bundle.stylist.run)
     g.add_node("catalog", bundle.catalog.run)
+    g.add_node("explainability", bundle.explainability.run)
     g.add_node("email", bundle.email.run)
     g.add_node("appointment", bundle.appointment.run)
     g.add_node("support", bundle.support.run)
@@ -57,12 +58,14 @@ def build_graph(
         {
             "stylist": "stylist",
             "appointment": "appointment",
+            "email": "email",
             "support": "support",
         },
     )
     g.add_edge("stylist", "catalog")
-    g.add_edge("catalog", "email")
-    g.add_edge("appointment", "email")
+    g.add_edge("catalog", "explainability")
+    g.add_edge("explainability", END)
+    g.add_edge("appointment", END)
     g.add_edge("email", END)
     g.add_edge("support", END)
 

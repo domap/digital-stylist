@@ -20,6 +20,7 @@ AGENT_LLM_KEYS: tuple[str, ...] = (
     "intent",
     "stylist",
     "catalog",
+    "explainability",
     "appointment",
     "email",
     "support",

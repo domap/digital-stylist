@@ -5,6 +5,7 @@ from __future__ import annotations
 import asyncio
 import logging
 import os
+import time
 import uuid
 from contextlib import asynccontextmanager
 from typing import Any
@@ -20,8 +21,10 @@ from starlette.middleware.cors import CORSMiddleware
 from digital_stylist.config import StylistSettings
 from digital_stylist.graph import build_graph
 from digital_stylist.infra.postgres.connection import maybe_apply_development_postgres_env
+from digital_stylist.observability.context import obs_bind_partial, obs_reset
+from digital_stylist.observability.logging_config import configure_logging
 from digital_stylist.providers.factories import build_agent_run_context
-from digital_stylist.retail_api import build_retail_router
+from digital_stylist.stylist_api import build_stylist_router
 
 logger = logging.getLogger("digital_stylist.worker")
 
@@ -58,6 +61,7 @@ def _state_summary(out: dict[str, Any]) -> dict[str, Any]:
         "booking_id",
         "stylist_notes",
         "catalog_rag_trace",
+        "recommendation_rationale",
         "email_draft",
         "appointment_copy",
         "mcp_email_queue_id",
@@ -88,9 +92,15 @@ def create_app(settings: StylistSettings | None = None) -> FastAPI:
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
+        configure_logging(settings)
         logger.info(
             "worker_startup",
-            extra={"environment": settings.environment, "docs": settings.should_show_openapi()},
+            extra={
+                "component": "worker",
+                "event": "worker_startup",
+                "environment": settings.environment,
+                "docs": settings.should_show_openapi(),
+            },
         )
         app.state.settings = settings
         ctx = build_agent_run_context(settings)
@@ -121,15 +131,35 @@ def create_app(settings: StylistSettings | None = None) -> FastAPI:
             allow_headers=["*"],
         )
 
-    app.include_router(build_retail_router())
+    app.include_router(build_stylist_router())
 
     @app.middleware("http")
     async def request_id_middleware(request: Request, call_next):
         rid = request.headers.get("X-Request-Id") or str(uuid.uuid4())
         request.state.request_id = rid
-        response: Response = await call_next(request)
-        response.headers["X-Request-Id"] = rid
-        return response
+        trace = (request.headers.get("X-Trace-Id") or "").strip() or None
+        obs_tok = obs_bind_partial(request_id=rid, trace_id=trace)
+        t0 = time.perf_counter()
+        try:
+            response: Response = await call_next(request)
+            response.headers["X-Request-Id"] = rid
+            if trace:
+                response.headers["X-Trace-Id"] = trace
+            ms = int((time.perf_counter() - t0) * 1000)
+            logger.info(
+                "http_request",
+                extra={
+                    "component": "http",
+                    "event": "http_request",
+                    "method": request.method,
+                    "path": request.url.path,
+                    "status_code": response.status_code,
+                    "duration_ms": ms,
+                },
+            )
+            return response
+        finally:
+            obs_reset(obs_tok)
 
     @app.exception_handler(RequestValidationError)
     async def validation_handler(request: Request, exc: RequestValidationError) -> JSONResponse:
@@ -146,7 +176,12 @@ def create_app(settings: StylistSettings | None = None) -> FastAPI:
             return JSONResponse(status_code=exc.status_code, content={"detail": exc.detail})
         s: StylistSettings = request.app.state.settings
         logger.exception(
-            "unhandled_error", extra={"request_id": getattr(request.state, "request_id", None)}
+            "unhandled_error",
+            extra={
+                "component": "worker",
+                "event": "unhandled_error",
+                "request_id": getattr(request.state, "request_id", None),
+            },
         )
         msg = str(exc) if s.expose_internal_errors() else "An internal error occurred"
         return _error_payload(request, code="internal_error", message=msg, status=500)
@@ -173,7 +208,6 @@ def create_app(settings: StylistSettings | None = None) -> FastAPI:
     async def invoke(request: Request, body: InvokeBody) -> dict[str, Any]:
         graph: Any = getattr(request.app.state, "graph", None)
         s: StylistSettings = request.app.state.settings
-        rid = getattr(request.state, "request_id", None)
 
         if graph is None:
             raise HTTPException(status_code=503, detail="Graph not initialized")
@@ -185,6 +219,8 @@ def create_app(settings: StylistSettings | None = None) -> FastAPI:
             )
 
         tid = body.thread_id or str(uuid.uuid4())
+        thread_tok = obs_bind_partial(thread_id=tid)
+        msg_len = len(body.message.strip())
         cfg = {"configurable": {"thread_id": tid}}
         payload: dict[str, Any] = {"messages": [HumanMessage(content=body.message.strip())]}
         meta = dict(body.context_metadata or {})
@@ -200,12 +236,26 @@ def create_app(settings: StylistSettings | None = None) -> FastAPI:
         def _run_graph() -> dict[str, Any]:
             return graph.invoke(payload, cfg)
 
+        inv0 = time.perf_counter()
+        logger.info(
+            "graph_invoke_start",
+            extra={
+                "component": "graph",
+                "event": "graph_invoke_start",
+                "message_len": msg_len,
+            },
+        )
         try:
             out = await asyncio.wait_for(asyncio.to_thread(_run_graph), timeout=timeout)
         except TimeoutError:
             logger.warning(
-                "invoke_timeout",
-                extra={"request_id": rid, "timeout_sec": timeout},
+                "graph_invoke_timeout",
+                extra={
+                    "component": "graph",
+                    "event": "graph_invoke_timeout",
+                    "timeout_sec": timeout,
+                    "duration_ms": int((time.perf_counter() - inv0) * 1000),
+                },
             )
             raise HTTPException(
                 status_code=504,
@@ -214,10 +264,31 @@ def create_app(settings: StylistSettings | None = None) -> FastAPI:
         except HTTPException:
             raise
         except Exception as e:
-            logger.exception("invoke_failed", extra={"request_id": rid})
+            logger.exception(
+                "graph_invoke_failed",
+                extra={
+                    "component": "graph",
+                    "event": "graph_invoke_failed",
+                    "duration_ms": int((time.perf_counter() - inv0) * 1000),
+                    "error_type": type(e).__name__,
+                },
+            )
             if s.expose_internal_errors():
                 raise HTTPException(status_code=500, detail=str(e)) from e
             raise HTTPException(status_code=500, detail="Graph invocation failed") from e
+        finally:
+            obs_reset(thread_tok)
+
+        logger.info(
+            "graph_invoke_end",
+            extra={
+                "component": "graph",
+                "event": "graph_invoke_end",
+                "thread_id": tid,
+                "duration_ms": int((time.perf_counter() - inv0) * 1000),
+                "success": True,
+            },
+        )
 
         msgs = list(out.get("messages") or [])
         assistant_message = ""
@@ -246,11 +317,8 @@ def run() -> None:
 
     from digital_stylist.providers.factories import build_default_settings
 
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s %(levelname)s %(name)s %(message)s",
-    )
     s = build_default_settings()
+    configure_logging(s)
     host = os.environ.get("STYLIST_WORKER_HOST", "127.0.0.1")
     port = int(os.environ.get("STYLIST_WORKER_PORT", "8787"))
     # Recreate app so OpenAPI and lifespan match current env (settings already loaded above).

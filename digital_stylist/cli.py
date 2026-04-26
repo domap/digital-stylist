@@ -11,6 +11,7 @@ from langchain_core.messages import HumanMessage
 
 from digital_stylist.config import StylistSettings
 from digital_stylist.graph import build_graph
+from digital_stylist.observability.logging_config import configure_logging
 from digital_stylist.providers.factories import build_agent_run_context, is_llm_api_key_resolved
 
 logger = logging.getLogger("digital_stylist.cli")
@@ -26,11 +27,7 @@ def main() -> None:
         ctx = build_agent_run_context()
     except ValueError as e:
         raise SystemExit(str(e)) from e
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s %(levelname)s %(name)s %(message)s",
-        stream=sys.stderr,
-    )
+    configure_logging(StylistSettings())
     graph = build_graph(context=ctx)
     thread_id = os.environ.get("STYLIST_THREAD_ID", str(uuid.uuid4()))
     logger.info("repl_session_started", extra={"thread_id": thread_id})

@@ -13,6 +13,7 @@
 - **Retail HTTP APIs** — FastAPI routes under `/api/v1` for catalog, customers, voice intent refinement, fitting rooms, and related flows (proxied through orchestration).
 - **Storefront UIs** — **Clienteling** (associate / store console) and **Connect** (customer-facing Ann experience), with Vite dev proxies to a single gateway.
 - **PostgreSQL** — Schema bootstrap and seed scripts for calendars, workforce, customers, and sample stylists (optional for LLM-only experiments via `STYLIST_PG_DATASTORE=memory`).
+- **Observability** — Correlated logs across gateway, worker, LangGraph agents, MCP client, and MCP tool handlers (`X-Request-Id` / `X-Trace-Id`, optional `STYLIST_LOG_FORMAT=json`). See [ARCHITECTURE.md](ARCHITECTURE.md#observability).
 
 ---
 
@@ -126,7 +127,7 @@ digital-stylist/
 ├── orchestration/            # Express gateway → worker (/v1/chat, /api/* proxy)
 ├── digital_stylist/          # Core Python package
 │   ├── worker_app.py         # FastAPI: /v1/invoke, health, retail router
-│   ├── retail_api.py         # /api/v1 retail & catalog HTTP surface
+│   ├── stylist_api.py         # /api/v1 stylist routes & catalog (Connect / clienteling)
 │   ├── graph.py              # LangGraph definition
 │   ├── agents/               # Agent bundle wiring
 │   ├── domains/              # Per-domain agents, prompts, MCP servers, repositories
@@ -169,6 +170,13 @@ When tests are added, prefer **`pytest`** for Python and the workspace’s **`np
 - **Design context:** See **[ARCHITECTURE.md](ARCHITECTURE.md)** before large refactors or new services.
 
 If the project adopts stricter rules (CODEOWNERS, required checks, Conventional Commits), update this section to match.
+
+---
+
+## Documentation
+
+- **[DeepWiki](docs/deepwiki/README.md)** — Topic-based wiki (system design, APIs, agents, MCP, data, config, observability, ops).
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** — Diagrams, patterns, and extension workflow.
 
 ---
 

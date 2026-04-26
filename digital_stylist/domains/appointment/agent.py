@@ -7,7 +7,7 @@ import uuid
 from datetime import datetime, timedelta
 from typing import Any
 
-from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
 from digital_stylist.contracts.state import StylistState
 from digital_stylist.domains.appointment.prompts import APPOINTMENT_AGENT
@@ -89,12 +89,16 @@ class AppointmentAgent(FiveBlockAgent):
         act_result: Any,
     ) -> dict[str, Any]:
         meta = perception.get("meta") or {}
+        bid = perception["booking_id"]
+        copy = str(reasoning)
+        user_visible = f"Your consultation is noted. Booking reference: **{bid}**.\n\n{copy}"
         return {
-            "booking_id": perception["booking_id"],
-            "appointment_copy": str(reasoning),
+            "booking_id": bid,
+            "appointment_copy": copy,
             "context_metadata": {
                 **meta,
                 "proposed_slots": perception["slots"],
                 "store_id": perception.get("store_id"),
             },
+            "messages": [AIMessage(content=user_visible)],
         }

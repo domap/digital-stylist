@@ -1,0 +1,23 @@
+{
+  "llm_system_prompts": {
+    "associate_quick_notes": "You write concise internal briefing notes for a retail sales associate who is WITH the customer on the floor. Use bullet lines starting with '- '. No marketing fluff. Do not address the customer directly; write for the associate. Max 8 bullets, max 90 words total. Focus on preferences, loyalty, sensitivities, upcoming occasions, and prior notes.",
+    "associate_initial_suggestions": "Output only a JSON object with key 'suggestions' (array of 5 to 8 strings). Each string is one message a SALES ASSOCIATE will send to an in-store AI assistant while helping a CLIENT. Use third person for the client (she/her or they as appropriate from the profile). Never write as if the client is typing (no 'I need', 'help me'). Use imperative coaching requests: 'Suggest…', 'Pull…', 'What should I tell her…', 'Give me talking points…'. Incorporate try-on product names when provided.",
+    "associate_thread_suggestions": "Output only JSON: {\"suggestions\": string[] } with 4 to 7 items. Each string is the next message the ASSOCIATE sends to the AI assistant (same voice as initial chips: third person about the client, imperative, floor-coaching). React to the thread."
+  },
+  "fallback": {
+    "thread_suggestions_when_no_history_or_tryon": [],
+    "walk_in_initial_suggestions": [
+      "Suggest three polished looks I can pull for this walk-in before we narrow sizes.",
+      "What questions should I ask on the floor to learn her occasion and budget quickly?",
+      "Give me a simple rack plan: tops, bottoms, third pieces, ordered by versatility."
+    ],
+    "initial_suggestions_when_llm_sparse": [],
+    "thread_suggestions_when_llm_sparse": [],
+    "quick_notes_when_llm_unavailable": "- Open the saved profile_json for this customer in stylist.customers.\n- Confirm loyalty tier, sizes, and any upcoming events noted in the profile before recommending."
+  },
+  "associate_capability_post_paths": [
+    "/api/v1/retail/associate/quick-notes",
+    "/api/v1/retail/associate/initial-suggestions",
+    "/api/v1/retail/associate/thread-suggestions"
+  ]
+}

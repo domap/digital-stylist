@@ -1,4 +1,5 @@
 import { getApiBaseUrl } from "./config";
+import { mergeObservabilityHeaders } from "@/lib/observability";
 import type {
   ApiCustomer,
   ApiProduct,
@@ -21,13 +22,14 @@ async function apiFetch(path: string, init?: RequestInit): Promise<Response> {
   const jsonBody = method !== "GET" && method !== "HEAD";
   const base = getApiBaseUrl();
   const url = path.startsWith("http") ? path : `${base}${path}`;
-  return fetch(url, {
+  const merged = mergeObservabilityHeaders({
     ...init,
     headers: {
       ...(jsonBody ? { "Content-Type": "application/json" } : {}),
       ...(init?.headers ?? {}),
     },
   });
+  return fetch(url, merged);
 }
 
 function mapProduct(p: Record<string, unknown>): ApiProduct {

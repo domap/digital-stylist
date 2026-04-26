@@ -110,7 +110,7 @@ flowchart TB
 |------|----------------|
 | **`orchestration/`** | Express gateway: proxies **`/api/*`** to the worker, exposes **`POST /v1/chat`** → worker **`POST /v1/invoke`**, health/ready, rate limiting. |
 | **`digital_stylist/worker_app.py`** | FastAPI factory: lifespan builds **LangGraph** once (`app.state.graph`), **`/v1/invoke`** runs the graph in a thread with timeout, includes **retail router**, middleware, exception handlers. |
-| **`digital_stylist/retail_api.py`** | **`APIRouter` `/api/v1`**: catalog products (JSON fixtures + media), Postgres-backed retail reads, stylist chat helpers, wires **voice intent** and **fitting room** modules. |
+| **`digital_stylist/stylist_api.py`** | **`APIRouter` `/api/v1`**: catalog (Postgres), stylist workforce reads, associate helpers, wires **voice intent** and **fitting room** modules. |
 | **`digital_stylist/graph.py`** | Compiles **`StateGraph`**: `customer` → `intent` → conditional **stylist / appointment / support** → **catalog**/**email** edges per routing rules. |
 | **`digital_stylist/nodes.py`** | LangGraph node glue (if present alongside graph wiring — agents invoked from bundle). |
 | **`digital_stylist/agents/bundle.py`** | **Composition root** for domain agents (`StylistAgentBundle.from_context`). |
@@ -142,7 +142,7 @@ flowchart TB
 6. **Response** JSON includes **`assistant_message`**, serialized **`messages`**, and a **`state`** summary for debugging.
 
 **Parallel path — retail / catalog HTTP:**  
-Storefronts call **`/api/v1/...`** (catalog, customers, voice transcript-to-intent, fitting room, etc.). The orchestration proxy passes them **unchanged** to the worker’s **`build_retail_router()`**, which reads **Postgres** and/or **fixture JSON** and may call **LLM** for specific endpoints.
+Connect and clienteling call **`/api/v1/...`** (catalog, customers, voice transcript-to-intent, fitting room, etc.). The orchestration proxy passes them **unchanged** to the worker’s **`build_stylist_router()`**, which reads **Postgres** (catalog + tenant JSON) and may call **LLM** for specific endpoints.
 
 ---
 
@@ -167,7 +167,7 @@ Storefronts call **`/api/v1/...`** (catalog, customers, voice transcript-to-inte
 ### A. New **HTTP API** under `/api/v1` (catalog, retail, voice, etc.)
 
 1. Prefer a dedicated module (e.g. `your_feature_api.py`) with **`attach_*_routes(router: APIRouter)`** or inline handlers for clarity.
-2. Register routes in **`build_retail_router()`** in `retail_api.py` (or include a sub-router).
+2. Register routes in **`build_stylist_router()`** in `stylist_api.py` (or include a sub-router).
 3. Use **`StylistSettings`** / **`Request`** for config and **`postgres_connect_kwargs`** when touching the database; follow existing **GUC / tenant** patterns from `infra/postgres`.
 4. **Orchestration** already proxies **`/api/*`** — no Node change required unless you add a **non-standard path**.
 5. Add or extend **TypeScript clients** in `apps/clienteling/src/lib` or `apps/connect/src/api` as needed.
@@ -202,6 +202,15 @@ Storefronts call **`/api/v1/...`** (catalog, customers, voice transcript-to-inte
 | Connect | **5174** | Vite dev |
 
 Environment variables are centralized in **`StylistSettings`** (`digital_stylist/config.py`); start there when tuning models, MCP mode, Postgres, or timeouts.
+
+---
+
+## Observability
+
+- **Correlation** — **`X-Request-Id`** (per HTTP call) and optional **`X-Trace-Id`** (stable per browser tab via `sessionStorage`) are sent from **Clienteling** / **Connect** (`mergeObservabilityHeaders`), forwarded by **orchestration** (`orchestration/src/server.mjs`), and applied on the **worker** via context vars (`digital_stylist/observability/context.py`) for all `digital_stylist.*` log lines.
+- **Python** — Set **`STYLIST_LOG_FORMAT=json`** and **`STYLIST_LOG_LEVEL`** for newline-delimited JSON on stderr (package logger **`digital_stylist`** only). Notable **events**: `http_request`, `graph_invoke_*`, `agent_run_*` (`FiveBlockAgent.run`), **`mcp_client_call_*`** (`McpRuntime.invoke` toward MCP), **`mcp_tool_*`** inside **`mcp_servers/handlers/*`** (combined HTTP MCP process).
+- **Orchestration** — Same **`STYLIST_LOG_FORMAT=json`** enables JSON lines for **`proxy_worker_complete`**, **`chat_proxy_complete`**, and error variants (`orchestration/src/observability.mjs`).
+- **Optional UI debug** — Clienteling: **`VITE_OBSERVABILITY=1`** logs correlation headers in the dev console (`apps/clienteling/src/lib/observability.ts`).
 
 ---
 

@@ -1,5 +1,6 @@
 import type { CustomerProfile } from "@/data/customers";
 import type { Product } from "@/data/products";
+import { mergeObservabilityHeaders } from "@/lib/observability";
 
 async function readJsonError(response: Response): Promise<string> {
   try {
@@ -121,7 +122,7 @@ export function mapCatalogRowToProduct(row: Record<string, unknown>): Product {
 }
 
 export async function loadCustomerProfiles(): Promise<CustomerProfile[]> {
-  const r = await fetch("/api/v1/retail/customers");
+  const r = await fetch("/api/v1/retail/customers", mergeObservabilityHeaders());
   if (!r.ok) throw new Error(await readJsonError(r));
   const raw = (await r.json()) as unknown;
   if (!Array.isArray(raw)) return [];
@@ -129,7 +130,7 @@ export async function loadCustomerProfiles(): Promise<CustomerProfile[]> {
 }
 
 export async function loadCatalogProducts(): Promise<Product[]> {
-  const r = await fetch("/api/v1/catalog/products");
+  const r = await fetch("/api/v1/catalog/products", mergeObservabilityHeaders());
   if (!r.ok) throw new Error(await readJsonError(r));
   const raw = (await r.json()) as unknown;
   if (!Array.isArray(raw)) return [];

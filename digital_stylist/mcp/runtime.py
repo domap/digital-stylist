@@ -3,13 +3,17 @@
 from __future__ import annotations
 
 import asyncio
+import logging
 import sys
+import time
 from typing import Any
 
 from langchain_core.tools import BaseTool
 from langchain_mcp_adapters.client import MultiServerMCPClient
 
 from digital_stylist.config import StylistSettings
+
+_mcp_client_log = logging.getLogger("digital_stylist.mcp.client")
 
 
 def _remote_mcp_endpoint(settings: StylistSettings) -> str | None:
@@ -86,7 +90,42 @@ class McpRuntime:
     def invoke(self, server_name: str, tool_name: str, arguments: dict[str, Any]) -> str:
         for t in self.tools_for(server_name):
             if t.name == tool_name:
-                out = _run(t.ainvoke(arguments))
+                t0 = time.perf_counter()
+                _mcp_client_log.info(
+                    "mcp_client_call_start",
+                    extra={
+                        "component": "mcp_client",
+                        "event": "mcp_client_call_start",
+                        "mcp_server": server_name,
+                        "mcp_tool": tool_name,
+                    },
+                )
+                try:
+                    out = _run(t.ainvoke(arguments))
+                except Exception as e:
+                    _mcp_client_log.exception(
+                        "mcp_client_call_error",
+                        extra={
+                            "component": "mcp_client",
+                            "event": "mcp_client_call_error",
+                            "mcp_server": server_name,
+                            "mcp_tool": tool_name,
+                            "duration_ms": int((time.perf_counter() - t0) * 1000),
+                            "error_type": type(e).__name__,
+                        },
+                    )
+                    raise
+                _mcp_client_log.info(
+                    "mcp_client_call_end",
+                    extra={
+                        "component": "mcp_client",
+                        "event": "mcp_client_call_end",
+                        "mcp_server": server_name,
+                        "mcp_tool": tool_name,
+                        "duration_ms": int((time.perf_counter() - t0) * 1000),
+                        "success": True,
+                    },
+                )
                 return _normalize_tool_content(out)
         raise KeyError(f"MCP tool not found: {server_name}.{tool_name}")
 

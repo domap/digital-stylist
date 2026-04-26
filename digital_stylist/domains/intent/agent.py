@@ -40,6 +40,7 @@ class IntentAgent(FiveBlockAgent):
         next_node: NextNodeLiteral = out.next_node
         if next_node == "respond":
             next_node = "support"
+        # "email" is kept for the dedicated lookbook / email-queue branch (see graph).
         return {
             "current_intent": out.intent,
             "urgency": out.urgency,

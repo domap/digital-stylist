@@ -12,6 +12,7 @@ import type {
   InitialSuggestionResponse,
   ThreadSuggestionResponse,
 } from "@/types/stylist";
+import { mergeObservabilityHeaders } from "@/lib/observability";
 
 export type CheckoutIntentDecision = "SHOW_SUMMARY" | "REFINE";
 export type CheckoutIntentResponse = {
@@ -144,7 +145,7 @@ export async function reserveFittingRoom(_params: {
 }
 
 export async function fetchCatalogProducts(): Promise<ApiProduct[]> {
-  const response = await fetch("/api/v1/catalog/products");
+  const response = await fetch("/api/v1/catalog/products", mergeObservabilityHeaders());
   if (!response.ok) throw new Error("Failed to fetch catalog products.");
   const raw = (await response.json()) as unknown;
   if (!Array.isArray(raw)) return [];
@@ -152,7 +153,7 @@ export async function fetchCatalogProducts(): Promise<ApiProduct[]> {
 }
 
 export async function fetchCustomers(): Promise<ApiCustomer[]> {
-  const response = await fetch("/api/v1/retail/customers");
+  const response = await fetch("/api/v1/retail/customers", mergeObservabilityHeaders());
   if (!response.ok) throw new Error("Failed to fetch customers.");
   const raw = (await response.json()) as unknown;
   if (!Array.isArray(raw)) return [];
@@ -206,10 +207,12 @@ function summarizeWorkerChatError(status: number, bodyText: string): string {
 }
 
 export async function sendStylistChat(request: ChatRequest): Promise<ChatResponse> {
-  const response = await fetch("/v1/chat", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
+  const response = await fetch(
+    "/v1/chat",
+    mergeObservabilityHeaders({
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
       message: request.message,
       thread_id: request.sessionId,
       context_metadata: {
@@ -222,7 +225,8 @@ export async function sendStylistChat(request: ChatRequest): Promise<ChatRespons
       },
       merge_session_defaults: true,
     }),
-  });
+    }),
+  );
   if (!response.ok) {
     const t = await response.text();
     throw new Error(summarizeWorkerChatError(response.status, t));
@@ -257,14 +261,17 @@ export async function fetchInitialSuggestions(
   customerId?: string,
   tryOnProductIds?: string[],
 ): Promise<InitialSuggestionResponse> {
-  const response = await fetch("/api/v1/retail/associate/initial-suggestions", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      customer_id: customerId?.trim() || null,
-      try_on_product_ids: tryOnProductIds?.filter(Boolean) ?? [],
+  const response = await fetch(
+    "/api/v1/retail/associate/initial-suggestions",
+    mergeObservabilityHeaders({
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        customer_id: customerId?.trim() || null,
+        try_on_product_ids: tryOnProductIds?.filter(Boolean) ?? [],
+      }),
     }),
-  });
+  );
   if (!response.ok) throw new Error("Failed to load suggested prompts.");
   const data = (await response.json()) as { suggestions?: string[] };
   return { suggestions: Array.isArray(data.suggestions) ? data.suggestions : [] };
@@ -275,15 +282,18 @@ export async function fetchThreadSuggestions(
   history: ChatTurn[],
   tryOnProductIds?: string[],
 ): Promise<ThreadSuggestionResponse> {
-  const response = await fetch("/api/v1/retail/associate/thread-suggestions", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      customer_id: customerId?.trim() || null,
-      try_on_product_ids: tryOnProductIds?.filter(Boolean) ?? [],
-      history: history.map((t) => ({ role: t.role, content: t.content })),
+  const response = await fetch(
+    "/api/v1/retail/associate/thread-suggestions",
+    mergeObservabilityHeaders({
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        customer_id: customerId?.trim() || null,
+        try_on_product_ids: tryOnProductIds?.filter(Boolean) ?? [],
+        history: history.map((t) => ({ role: t.role, content: t.content })),
+      }),
     }),
-  });
+  );
   if (!response.ok) throw new Error("Failed to load thread prompts.");
   const data = (await response.json()) as { suggestions?: string[] };
   return { suggestions: Array.isArray(data.suggestions) ? data.suggestions : [] };
@@ -292,11 +302,14 @@ export async function fetchThreadSuggestions(
 export async function fetchAssociateQuickNotes(customerId?: string): Promise<AssociateQuickNotesResponse> {
   const cid = customerId?.trim();
   if (!cid) return { notes: "" };
-  const response = await fetch("/api/v1/retail/associate/quick-notes", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ customer_id: cid }),
-  });
+  const response = await fetch(
+    "/api/v1/retail/associate/quick-notes",
+    mergeObservabilityHeaders({
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ customer_id: cid }),
+    }),
+  );
   if (!response.ok) throw new Error("Failed to load quick notes.");
   const data = (await response.json()) as { notes?: string };
   return { notes: typeof data.notes === "string" ? data.notes : "" };

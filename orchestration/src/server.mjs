@@ -7,6 +7,7 @@
 
 import { randomUUID } from "node:crypto";
 
+import { logEvent } from "./observability.mjs";
 import cors from "cors";
 import express from "express";
 import helmet from "helmet";
@@ -37,6 +38,11 @@ if (corsOrigins?.length) {
   app.use(cors());
 }
 
+app.use((_req, res, next) => {
+  res.setHeader("Access-Control-Expose-Headers", "X-Request-Id, X-Trace-Id");
+  next();
+});
+
 /**
  * Proxy retail/catalog routes to the Python worker (same paths as the worker serves under /api/v1).
  * Lets storefront apps use a single origin (this gateway + Vite dev proxy to PORT).
@@ -46,12 +52,17 @@ app.use(async (req, res, next) => {
     return next();
   }
   const rid = req.headers["x-request-id"] ?? randomUUID();
+  const trace = (req.headers["x-trace-id"] ?? "").toString().trim() || undefined;
   const targetUrl = `${WORKER_URL}${req.originalUrl}`;
   const ac = new AbortController();
   const timer = setTimeout(() => ac.abort(), workerTimeoutMs);
+  const t0 = Date.now();
   try {
     const outHeaders = new Headers();
     outHeaders.set("X-Request-Id", rid);
+    if (trace) {
+      outHeaders.set("X-Trace-Id", trace);
+    }
     if (req.headers.accept) {
       outHeaders.set("Accept", req.headers.accept);
     }
@@ -68,14 +79,34 @@ app.use(async (req, res, next) => {
       signal: ac.signal,
     });
     res.setHeader("X-Request-Id", rid);
+    if (trace) {
+      res.setHeader("X-Trace-Id", trace);
+    }
     const ct = r.headers.get("content-type");
     if (ct) {
       res.setHeader("Content-Type", ct);
     }
     res.status(r.status);
     res.send(Buffer.from(await r.arrayBuffer()));
+    logEvent("proxy_worker_complete", {
+      request_id: rid,
+      trace_id: trace,
+      method: req.method,
+      path: req.originalUrl?.split("?")[0] ?? req.path,
+      status_code: r.status,
+      duration_ms: Date.now() - t0,
+    });
   } catch (err) {
     const aborted = err?.name === "AbortError";
+    logEvent("proxy_worker_error", {
+      request_id: rid,
+      trace_id: trace,
+      method: req.method,
+      path: req.originalUrl?.split("?")[0] ?? req.path,
+      duration_ms: Date.now() - t0,
+      error_type: aborted ? "worker_timeout" : "worker_unreachable",
+      detail: String(err),
+    });
     res.status(aborted ? 504 : 502).json({
       error: aborted ? "worker_timeout" : "worker_unreachable",
       detail: String(err),
@@ -144,14 +175,20 @@ app.get("/ready", async (_req, res) => {
  * Body: { message, thread_id?, context_metadata?, merge_session_defaults? }
  */
 app.post("/v1/chat", chatLimiter, async (req, res) => {
-    const rid = req.headers["x-request-id"] ?? randomUUID();
+  const rid = req.headers["x-request-id"] ?? randomUUID();
+  const trace = (req.headers["x-trace-id"] ?? "").toString().trim() || undefined;
+  const t0 = Date.now();
   try {
+    const fwd = {
+      "Content-Type": "application/json",
+      "X-Request-Id": rid,
+    };
+    if (trace) {
+      fwd["X-Trace-Id"] = trace;
+    }
     const r = await fetchWorker("/v1/invoke", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Request-Id": rid,
-      },
+      headers: fwd,
       body: JSON.stringify(req.body ?? {}),
     });
     const text = await r.text();
@@ -162,9 +199,25 @@ app.post("/v1/chat", chatLimiter, async (req, res) => {
       data = { raw: text };
     }
     res.setHeader("X-Request-Id", rid);
+    if (trace) {
+      res.setHeader("X-Trace-Id", trace);
+    }
     res.status(r.status).json(data);
+    logEvent("chat_proxy_complete", {
+      request_id: rid,
+      trace_id: trace,
+      status_code: r.status,
+      duration_ms: Date.now() - t0,
+    });
   } catch (err) {
     const aborted = err?.name === "AbortError";
+    logEvent("chat_proxy_error", {
+      request_id: rid,
+      trace_id: trace,
+      duration_ms: Date.now() - t0,
+      error_type: aborted ? "worker_timeout" : "worker_unreachable",
+      detail: String(err),
+    });
     res.status(aborted ? 504 : 502).json({
       error: aborted ? "worker_timeout" : "worker_unreachable",
       detail: String(err),
