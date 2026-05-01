@@ -8,7 +8,7 @@
 
 ## Core value
 
-1. **Single graph, many specialists** — One session flows through **customer** enrichment → **intent** classification → a branch (**stylist**, **appointment**, or **support**) → downstream **catalog** / **email** nodes as wired in `digital_stylist/graph.py`.
+1. **Single graph, many specialists** — One session flows through **customer** enrichment → **intent** classification → a branch (**stylist**, **appointment**, **email**, or **support**) as wired in `digital_stylist/graph.py`. The **stylist** path continues **catalog** → **explainability**; **email** (lookbook / queue) is a **separate** intent branch, not chained after stylist or appointment.
 2. **Composable inference** — Provider and models come from **`StylistSettings`** (`digital_stylist/config.py`), not hardcoded model IDs in business logic.
 3. **Tools without baking Postgres into prompts** — Agents call **`McpRuntime.invoke`** so customer/appointment/email/associate behavior stays behind MCP contracts.
 4. **Same-origin developer UX** — Vite proxies `/api` and `/v1` to orchestration (port **3000**), which forwards `/api/*` to the worker (**8787**) and maps `POST /v1/chat` → `POST /v1/invoke`.

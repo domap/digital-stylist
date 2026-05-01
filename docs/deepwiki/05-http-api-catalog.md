@@ -12,6 +12,8 @@ All paths below are served by the **Python worker** under prefix **`/api/v1`** u
 | `GET` | `/health` | Liveness |
 | `GET` | `/ready` | Readiness (graph loaded) |
 
+The invoke handler surfaces **`assistant_message`** from the graph output (typically the **last `AIMessage`** in **`messages`**). After the graph refactor, that usually comes from **`explainability`** on the stylist path, **`appointment`** on booking, **`email`** on the dedicated email branch, or **`support`** on support — each branch is responsible for appending user-visible assistant content where needed.
+
 ## Catalog
 
 | Method | Path | Purpose |

@@ -15,4 +15,4 @@ Deep, navigable documentation for contributors and operators. Start here, then f
 | [09 — Observability](09-observability.md) | Correlation IDs, JSON logs, events |
 | [10 — Operations & troubleshooting](10-operations-and-troubleshooting.md) | Health, quotas, Postgres, scaling caveats |
 
-**Also in repo:** [ARCHITECTURE.md](../../ARCHITECTURE.md) (diagrams + patterns), [README.md](../../README.md) (quick start), [.env.example](../../.env.example) (env template).
+**Also in repo:** [ARCHITECTURE.md](../../ARCHITECTURE.md) (diagrams + patterns), [README.md](../../README.md) (quick start), [.env.example](../../.env.example) (env template), [AGENTS.md](../../AGENTS.md) (AI agent entrypoint), [docs/agents/](../agents/) (full agent / subagent / review playbooks), [BUILDING_SIMILAR_PROJECT.md](../BUILDING_SIMILAR_PROJECT.md) (scaffold checklist for a comparable stack).

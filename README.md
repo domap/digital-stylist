@@ -6,7 +6,7 @@
 
 ## Features
 
-- **Conversational orchestration** — LangGraph pipeline (customer → intent → stylist / appointment / support → catalog & email) with checkpointed sessions via `thread_id`.
+- **Conversational orchestration** — LangGraph pipeline: customer → intent → branches (**stylist** → catalog → explainability, **appointment**, **email**, or **support**), with checkpointed sessions via `thread_id`.
 - **Composable LLMs** — Google Gen AI or OpenAI via environment configuration; optional per-agent model overrides.
 - **Catalog intelligence** — ChromaDB vector store for RAG-style retrieval over product content; optional catalog feed indexing.
 - **MCP tool layer** — Customer, appointment, email, and associate capabilities exposed as MCP tools (stdio subprocesses or a combined streamable HTTP service).

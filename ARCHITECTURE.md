@@ -10,7 +10,7 @@ This document describes the **digital-stylist** monorepo: how storefront and ass
 
 **Core value proposition:**
 
-- **Unified orchestration** — One LangGraph pipeline routes user intent to specialized agents (stylist, catalog, appointment, email, support) with shared state and optional **checkpointed sessions** (`thread_id`).
+- **Unified orchestration** — One LangGraph pipeline routes user intent to specialized agents (stylist, catalog, explainability, appointment, email, support) with shared state and optional **checkpointed sessions** (`thread_id`).
 - **Composable inference** — LLM provider, models, and per-agent overrides are **environment-driven** (`StylistSettings`), not hardcoded.
 - **Tooling via MCP** — Domain capabilities (customer lookup, appointments, email, associate tasks) are exposed as **MCP tools** (stdio subprocesses by default, or a **single remote streamable HTTP** MCP service).
 - **Retail alignment** — **PostgreSQL** backs calendars, customers, workforce, fitting-room style flows; **read-only HTTP APIs** (`/api/v1/...`) serve the React apps with tenant/session GUC patterns.
@@ -67,10 +67,16 @@ flowchart TB
   subgraph graph["LangGraph"]
     N1["customer"]
     N2["intent"]
-    N3["stylist / appointment / support"]
-    N4["catalog → email"]
-    N1 --> N2 --> N3
-    N3 --> N4
+    N1 --> N2
+    N2 -->|"next_node"| B1["stylist"]
+    N2 --> B2["appointment"]
+    N2 --> B3["email"]
+    N2 --> B4["support"]
+    B1 --> C1["catalog"]
+    C1 --> C2["explainability → END"]
+    B2 --> E1["END"]
+    B3 --> E2["END"]
+    B4 --> E3["END"]
   end
 
   subgraph mcp["MCP"]
@@ -111,7 +117,7 @@ flowchart TB
 | **`orchestration/`** | Express gateway: proxies **`/api/*`** to the worker, exposes **`POST /v1/chat`** → worker **`POST /v1/invoke`**, health/ready, rate limiting. |
 | **`digital_stylist/worker_app.py`** | FastAPI factory: lifespan builds **LangGraph** once (`app.state.graph`), **`/v1/invoke`** runs the graph in a thread with timeout, includes **retail router**, middleware, exception handlers. |
 | **`digital_stylist/stylist_api.py`** | **`APIRouter` `/api/v1`**: catalog (Postgres), stylist workforce reads, associate helpers, wires **voice intent** and **fitting room** modules. |
-| **`digital_stylist/graph.py`** | Compiles **`StateGraph`**: `customer` → `intent` → conditional **stylist / appointment / support** → **catalog**/**email** edges per routing rules. |
+| **`digital_stylist/graph.py`** | Compiles **`StateGraph`**: `customer` → `intent` → conditional **`route_from_intent`** → **`stylist` \| `appointment` \| `email` \| `support`**. Stylist path: **`stylist` → `catalog` → `explainability` → END**; **`appointment`**, **`email`**, and **`support`** each go **directly to END** (email is not chained after stylist or appointment). |
 | **`digital_stylist/nodes.py`** | LangGraph node glue (if present alongside graph wiring — agents invoked from bundle). |
 | **`digital_stylist/agents/bundle.py`** | **Composition root** for domain agents (`StylistAgentBundle.from_context`). |
 | **`digital_stylist/domains/*`** | **Domain agents** (`agent.py`), **prompts**, optional **`mcp_server.py`** per domain (customer, appointment, email, associate), **repositories** where Postgres is used. |
@@ -135,9 +141,9 @@ flowchart TB
 3. **Worker** validates **`InvokeBody`**, merges optional **session defaults** into `context_metadata`, builds **`HumanMessage`**, and invokes **`graph.invoke(payload, { configurable: { thread_id } })`** (async wrapper with timeout).
 4. **LangGraph** runs:
    - **`customer`** — profile / context enrichment.
-   - **`intent`** — routing signal for downstream branch.
-   - **Conditional edge** — **`stylist`**, **`appointment`**, or **`support`** (see `domains/intent/routing.py`).
-   - **Downstream nodes** — e.g. **`catalog`** (RAG + recommendations) and **`email`** (draft / side effects) on stylist path; **`appointment`** then **`email`** on booking path; **`support`** → end.
+   - **`intent`** — structured intent and **`next_node`** for the branch.
+   - **Conditional edge** — **`stylist`**, **`appointment`**, **`email`**, or **`support`** (`domains/intent/routing.py`).
+   - **Stylist path** — **`catalog`** (RAG + recommendations) → **`explainability`** (rationale + user-visible **`AIMessage`**). **Email path** — only when intent selects **`email`**: **`email`** drafts / queues lookbook via MCP, then END. **Appointment** and **support** end after their own nodes (each may append assistant-visible content in **`synthesize`**).
 5. **MCP** tools may run inside agent **`act`** phases — **`McpRuntime`** resolves LangChain tools from MCP servers (stdio or remote).
 6. **Response** JSON includes **`assistant_message`**, serialized **`messages`**, and a **`state`** summary for debugging.
 
@@ -207,9 +213,10 @@ Environment variables are centralized in **`StylistSettings`** (`digital_stylist
 
 ## Observability
 
-- **Correlation** — **`X-Request-Id`** (per HTTP call) and optional **`X-Trace-Id`** (stable per browser tab via `sessionStorage`) are sent from **Clienteling** / **Connect** (`mergeObservabilityHeaders`), forwarded by **orchestration** (`orchestration/src/server.mjs`), and applied on the **worker** via context vars (`digital_stylist/observability/context.py`) for all `digital_stylist.*` log lines.
-- **Python** — Set **`STYLIST_LOG_FORMAT=json`** and **`STYLIST_LOG_LEVEL`** for newline-delimited JSON on stderr (package logger **`digital_stylist`** only). Notable **events**: `http_request`, `graph_invoke_*`, `agent_run_*` (`FiveBlockAgent.run`), **`mcp_client_call_*`** (`McpRuntime.invoke` toward MCP), **`mcp_tool_*`** inside **`mcp_servers/handlers/*`** (combined HTTP MCP process).
-- **Orchestration** — Same **`STYLIST_LOG_FORMAT=json`** enables JSON lines for **`proxy_worker_complete`**, **`chat_proxy_complete`**, and error variants (`orchestration/src/observability.mjs`).
+- **Correlation** — **`X-Request-Id`** (per HTTP call) and optional **`X-Trace-Id`** (stable per browser tab via `sessionStorage`) are sent from **Clienteling** / **Connect** (`mergeObservabilityHeaders`), forwarded by **orchestration** (`orchestration/src/server.mjs`), and merged into **`digital_stylist.observability.context`** via **`obs_bind_partial`** on the worker so **`obs_snapshot()`** returns the active IDs for the request (no threading through every call site).
+- **Python logging** — **`configure_logging(StylistSettings)`** (`observability/logging_config.py`) is **idempotent**: one **`StreamHandler`** on the **`digital_stylist`** package logger only (**`propagate=False`**). **`STYLIST_LOG_LEVEL`** sets verbosity; **`STYLIST_LOG_FORMAT=json`** emits one JSON object per line on stderr with **`ts`**, **`level`**, **`logger`**, **`message`**, optional **`exception`**, then **`obs_snapshot()`** fields, then any **structured `LogRecord` extras** whitelisted in **`logging_config`** (e.g. **`request_id`**, **`trace_id`**, **`thread_id`**, **`component`**, **`event`**, **`agent`**, **`duration_ms`**, **`path`**, **`method`**, **`status_code`**, MCP fields, **`error_type`**, etc.). Default **`text`** format uses a standard line prefix and appends **`[key=value …]`** from **`obs_snapshot()`** when present.
+- **Notable events** — e.g. **`http_request`**, **`graph_invoke_*`**, **`agent_run_*`** (`FiveBlockAgent.run`), **`mcp_client_call_*`** (`McpRuntime.invoke`), **`mcp_tool_*`** in **`mcp_servers/handlers/*`**.
+- **Orchestration** — **`STYLIST_LOG_FORMAT=json`** enables JSON lines for **`proxy_worker_*`**, **`chat_proxy_*`**, and error variants (`orchestration/src/observability.mjs`).
 - **Optional UI debug** — Clienteling: **`VITE_OBSERVABILITY=1`** logs correlation headers in the dev console (`apps/clienteling/src/lib/observability.ts`).
 
 ---
@@ -221,3 +228,5 @@ Update this file when:
 - Adding a **new top-level service** or **deployment unit**.
 - Changing **graph topology** or **orchestration routing**.
 - Introducing **new auth** or **tenant** boundaries at the API layer.
+
+AI contributor playbooks live under **`docs/agents/`** with a short index at the repo root **`AGENTS.md`**. For cloning this architecture elsewhere, see **`docs/BUILDING_SIMILAR_PROJECT.md`**.
